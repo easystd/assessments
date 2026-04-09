@@ -1,17 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',                    // ← This makes it static (required for Cloudflare Pages)
   reactStrictMode: true,
-  experimental: {
-    // Enables better performance for client components
-  },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
+    unoptimized: true,                 // Required for static export
   },
+  trailingSlash: true,                 // Recommended for Cloudflare Pages
 };
 
 export default nextConfig;
