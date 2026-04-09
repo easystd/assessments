@@ -61,15 +61,20 @@ export default function AssessmentPage() {
 
   const question = questions[currentStep];
 
-  const handleSelect = (option: string) => {
-    setAnswers(prev => ({
-      ...prev,
-      [question.id]: question.multi
-        ? (prev[question.id] as string[] || []).includes(option)
-          ? (prev[question.id] as string[]).filter(a => a !== option)
-          : [...(prev[question.id] as string[] || []), option]
-        : option
-    }));
+  const toggleOption = (option: string) => {
+    setAnswers((prev) => {
+      const current = prev[question.id] as string[] || [];
+      return {
+        ...prev,
+        [question.id]: current.includes(option)
+          ? current.filter((o) => o !== option)
+          : [...current, option]
+      };
+    });
+  };
+
+  const selectOption = (option: string) => {
+    setAnswers((prev) => ({ ...prev, [question.id]: option }));
   };
 
   const nextStep = () => {
@@ -84,11 +89,12 @@ export default function AssessmentPage() {
     if (currentStep > 0) setCurrentStep(currentStep - 1);
   };
 
-  const getRisk = () => {
+  // Simple risk scoring
+  const getRiskLevel = () => {
     let score = 0;
-    if (answers[3]?.includes("Yes")) score += 4;           // genital lesions
-    if (answers[4] && (answers[4] as string[]).length > 0 && !(answers[4] as string[]).includes("None of the above")) score += 3;
-    if (answers[5] && (answers[5] as string[]).length > 0 && !(answers[5] as string[]).includes("None of the above")) score += 2;
+    if (answers[3] && (answers[3] as string).includes("Yes")) score += 4;
+    if (answers[4] && Array.isArray(answers[4]) && answers[4].length > 0 && !answers[4].includes("None of the above")) score += 3;
+    if (answers[5] && Array.isArray(answers[5]) && answers[5].length > 0 && !answers[5].includes("None of the above")) score += 2;
     if (answers[2] === "Yes") score += 2;
     if (answers[6] === "Yes") score += 1;
 
@@ -98,115 +104,38 @@ export default function AssessmentPage() {
   };
 
   if (submitted) {
-    const risk = getRisk();
-    const riskColor = risk.level === "High" ? "red" : risk.level === "Moderate" ? "amber" : "emerald";
+    const risk = getRiskLevel();
+    const color = risk.level === "High" ? "red" : risk.level === "Moderate" ? "amber" : "emerald";
 
     return (
       <div className="min-h-screen bg-slate-50 py-12 px-6">
         <div className="max-w-2xl mx-auto">
-          <div className={`text-center py-8 px-6 rounded-3xl mb-8 border-2 border-${riskColor}-200 bg-white`}>
-            <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-${riskColor}-100 text-${riskColor}-600 text-4xl mb-6`}>
+          <div className={`text-center py-8 px-6 rounded-3xl mb-8 border-2 border-${color}-200 bg-white`}>
+            <div className={`mx-auto inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-${color}-100 text-${color}-600 text-5xl mb-6`}>
               {risk.level === "High" ? "⚠️" : risk.level === "Moderate" ? "⚡" : "✅"}
             </div>
-            <h1 className="text-3xl font-semibold mb-2">Assessment Complete</h1>
-            <p className={`text-${riskColor}-600 text-xl font-medium`}>{risk.text}</p>
+            <h1 className="text-3xl font-semibold mb-3">Assessment Complete</h1>
+            <p className={`text-${color}-600 text-xl font-medium`}>{risk.text}</p>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-3xl p-8 space-y-8 text-slate-700">
+          <div className="bg-white border border-slate-200 rounded-3xl p-8 space-y-8">
             <h2 className="text-2xl font-semibold">What your answers suggest</h2>
-            <p className="leading-relaxed">
-              Your answers indicate {risk.level === "High" ? "symptoms that may be associated with syphilis." : risk.level === "Moderate" ? "some symptoms that could be related." : "low likelihood of syphilis at this time."}
+            <p className="text-slate-700 leading-relaxed">
+              Your answers indicate {risk.level === "High" 
+                ? "symptoms that may be associated with syphilis or another condition." 
+                : risk.level === "Moderate" 
+                ? "some symptoms that could be related to syphilis." 
+                : "low likelihood of syphilis at this time."}
             </p>
 
-            <div className="pt-6 border-t">
-              <h3 className="font-semibold mb-4">Next steps (strongly recommended)</h3>
-              <ol className="space-y-4 text-sm list-decimal pl-5">
-                <li>Consult a doctor or sexual health clinic as soon as possible</li>
-                <li>Get a blood test for syphilis (most accurate method)</li>
-                <li>Inform recent sexual partners so they can get tested</li>
+            <div className="pt-6 border-t border-slate-100">
+              <h3 className="font-semibold mb-4">Recommended Next Steps</h3>
+              <ol className="space-y-3 text-sm list-decimal pl-5 text-slate-700">
+                <li>Visit a doctor or sexual health clinic as soon as possible</li>
+                <li>Get a laboratory blood test for syphilis</li>
+                <li>Inform recent sexual partners so they can also get tested</li>
               </ol>
             </div>
 
             <div className="pt-6 border-t text-xs text-slate-500">
-              <strong>Important:</strong> This is an educational assessment only. It is not a diagnosis. Always get laboratory testing.
-            </div>
-          </div>
-
-          <div className="flex gap-4 mt-8">
-            <button
-              onClick={() => window.location.reload()}
-              className="flex-1 py-4 bg-slate-100 hover:bg-slate-200 rounded-2xl font-medium"
-            >
-              Retake Assessment
-            </button>
-            <Link
-              href="/"
-              className="flex-1 py-4 bg-teal-600 text-white hover:bg-teal-700 rounded-2xl font-medium text-center"
-            >
-              Back to Home
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="min-h-screen bg-slate-50 py-12 px-6">
-      <div className="max-w-2xl mx-auto">
-        <div className="flex justify-between text-sm text-slate-500 mb-6">
-          <span>Question {currentStep + 1} of {questions.length}</span>
-          <span className="text-teal-600 cursor-pointer" onClick={() => window.location.reload()}>Exit</span>
-        </div>
-
-        <div className="bg-white border border-slate-200 rounded-3xl p-10 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900 mb-8 leading-tight">
-            {question.question}
-          </h2>
-
-          <div className="space-y-4">
-            {question.options.map((option, i) => {
-              const selected = Array.isArray(answers[question.id])
-                ? (answers[question.id] as string[]).includes(option)
-                : answers[question.id] === option;
-
-              return (
-                <button
-                  key={i}
-                  onClick={() => handleSelect(option)}
-                  className={`w-full text-left px-6 py-5 rounded-2xl border transition-all ${
-                    selected
-                      ? "border-teal-600 bg-teal-50"
-                      : "border-slate-200 hover:border-slate-300"
-                  }`}
-                >
-                  {option}
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="flex justify-between mt-12">
-            <button
-              onClick={prevStep}
-              disabled={currentStep === 0}
-              className="px-8 py-4 text-slate-500 disabled:opacity-30"
-            >
-              ← Back
-            </button>
-            <button
-              onClick={nextStep}
-              className="px-10 py-4 bg-teal-600 text-white rounded-2xl font-medium hover:bg-teal-700 transition-colors"
-            >
-              {currentStep === questions.length - 1 ? "See Results" : "Continue →"}
-            </button>
-          </div>
-        </div>
-
-        <p className="text-center text-xs text-slate-400 mt-12">
-          Anonymous • No data stored • Educational tool only
-        </p>
-      </div>
-    </div>
-  );
-}
+              <strong>Medical Disclaimer:</strong> This is an educational assessment only and is not a diagnosis
