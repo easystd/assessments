@@ -1,4 +1,4 @@
-import { questions, type Question } from "./questions";
+import type { Question } from "./assessments/types";
 
 export type RiskLevel = "low" | "moderate" | "high" | "very-high";
 
@@ -18,7 +18,9 @@ const CATEGORY_WEIGHTS: Record<Question["category"], number> = {
 };
 
 export function calculateScore(
-  answers: Record<number, string | string[]>
+  questions: Question[],
+  answers: Record<number, string | string[]>,
+  conditionName: string
 ): RiskResult {
   let weightedTotal = 0;
   let maxWeightedTotal = 0;
@@ -27,7 +29,6 @@ export function calculateScore(
     const weight = CATEGORY_WEIGHTS[q.category];
     const answer = answers[q.id];
 
-    // Calculate max possible for this question
     if (q.type === "multi") {
       const maxMulti = q.options
         .filter((o) => o.points > 0)
@@ -55,22 +56,22 @@ export function calculateScore(
   const rounded = Math.round(weightedTotal * 10) / 10;
 
   return {
-    ...getRiskTier(rounded),
+    ...getRiskTier(rounded, conditionName),
     weightedScore: rounded,
     maxPossibleScore: Math.round(maxWeightedTotal * 10) / 10,
   };
 }
 
 function getRiskTier(
-  score: number
+  score: number,
+  condition: string
 ): Pick<RiskResult, "level" | "label" | "headline" | "description"> {
   if (score >= 25) {
     return {
       level: "very-high",
       label: "Very High Risk",
       headline: "High Risk — Seek Testing Immediately",
-      description:
-        "Based on your responses, there is significant concern. Please get tested promptly. Syphilis is fully curable with antibiotics when caught early.",
+      description: `Based on your responses, there is significant concern for ${condition}. Please get tested promptly. Early detection enables effective treatment.`,
     };
   }
   if (score >= 15) {
@@ -78,8 +79,7 @@ function getRiskTier(
       level: "high",
       label: "High Risk",
       headline: "Elevated Risk — Prompt Testing Advised",
-      description:
-        "Your responses suggest a meaningful risk. We strongly recommend getting tested as soon as possible. Early detection leads to simple, effective treatment.",
+      description: `Your responses suggest a meaningful risk for ${condition}. We strongly recommend getting tested as soon as possible. Early detection leads to effective treatment.`,
     };
   }
   if (score >= 7) {
@@ -87,15 +87,13 @@ function getRiskTier(
       level: "moderate",
       label: "Moderate Risk",
       headline: "Moderate Risk — Testing Recommended",
-      description:
-        "Some of your responses indicate potential risk factors. We recommend getting tested to rule out syphilis and other STIs.",
+      description: `Some of your responses indicate potential risk factors for ${condition}. We recommend getting tested to rule it out.`,
     };
   }
   return {
     level: "low",
     label: "Low Risk",
     headline: "Low Risk Indicated",
-    description:
-      "Your responses suggest a lower likelihood of syphilis at this time. However, if you have any concerns, testing is the only way to know for sure.",
+    description: `Your responses suggest a lower likelihood of ${condition} at this time. However, if you have any concerns, testing is the only way to know for sure.`,
   };
 }

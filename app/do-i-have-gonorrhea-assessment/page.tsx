@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { syphilis } from "@/lib/assessments/syphilis";
+import { gonorrhea } from "@/lib/assessments/gonorrhea";
 import { AssessmentPageClient } from "@/components/assessment/assessment-page";
 
 export const metadata: Metadata = {
-  title: syphilis.metaTitle,
-  description: syphilis.metaDescription,
+  title: gonorrhea.metaTitle,
+  description: gonorrhea.metaDescription,
 };
 
 export default function Page() {
-  return <AssessmentPageClient config={syphilis} />;
+  return <AssessmentPageClient config={gonorrhea} />;
 }

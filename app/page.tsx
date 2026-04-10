@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { assessments } from "@/lib/assessments";
 import {
   Card,
   CardContent,
@@ -7,7 +8,12 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Shield, DatabaseZap, Stethoscope, ArrowRight } from "lucide-react";
+import {
+  Shield,
+  DatabaseZap,
+  Stethoscope,
+  ArrowRight,
+} from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -19,38 +25,30 @@ export default function HomePage() {
       </div>
 
       <main className="flex-1">
-        <div className="mx-auto max-w-2xl px-4 py-12 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 py-12 sm:py-20">
           {/* Hero */}
           <div className="text-center space-y-6">
             <Badge variant="secondary" className="text-sm">
-              Anonymous Assessment
+              Anonymous Assessments
             </Badge>
 
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-              Do I Have Syphilis?
+              STD &amp; STI Risk Assessments
             </h1>
 
             <p className="text-xl text-muted-foreground">
-              Free, Private Symptom &amp; Risk Assessment
+              Free, Private Symptom &amp; Risk Assessments
             </p>
 
-            <p className="text-muted-foreground max-w-md mx-auto">
-              Answer 10 simple questions. Get personalized guidance in under 3
-              minutes. Completely anonymous — no data collected.
+            <p className="text-muted-foreground max-w-lg mx-auto">
+              Choose a condition below. Answer 10 simple questions and get
+              personalized guidance in under 3 minutes. Completely anonymous — no
+              data collected.
             </p>
-
-            <div className="pt-4">
-              <Button size="lg" className="text-base px-8 h-12" asChild>
-                <Link href="/do-i-have-syphilis-assessment">
-                  Start Free Assessment
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-            </div>
           </div>
 
           {/* Trust signals */}
-          <div className="grid grid-cols-3 gap-6 mt-16 text-center">
+          <div className="grid grid-cols-3 gap-6 mt-12 text-center">
             <div className="flex flex-col items-center gap-2">
               <Shield className="h-5 w-5 text-muted-foreground" />
               <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
@@ -71,19 +69,41 @@ export default function HomePage() {
             </div>
           </div>
 
+          {/* Assessment cards grid */}
+          <div className="grid sm:grid-cols-2 gap-4 mt-12">
+            {assessments.map((a) => (
+              <Card key={a.slug} className="group hover:shadow-md transition-shadow">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-base">{a.headline}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex items-center justify-between">
+                  <p className="text-xs text-muted-foreground">
+                    10 questions &bull; ~3 min &bull; Private
+                  </p>
+                  <Button variant="ghost" size="sm" asChild>
+                    <Link href={`/do-i-have-${a.slug}-assessment`}>
+                      Start
+                      <ArrowRight className="ml-1 h-3 w-3" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
           {/* Info cards */}
           <div className="grid sm:grid-cols-2 gap-4 mt-12">
             <Card>
               <CardHeader>
                 <CardTitle className="text-base">
-                  Why take this assessment?
+                  Why take an assessment?
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Syphilis symptoms can be subtle, painless, or entirely absent.
-                  This tool helps you understand your risk level and decide
-                  whether testing is appropriate for you.
+                  Many STIs have subtle or no symptoms at all. These tools help
+                  you understand your risk level and decide whether testing is
+                  appropriate for you.
                 </p>
               </CardContent>
             </Card>
@@ -94,9 +114,9 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  10 straightforward questions covering risk factors and
-                  symptoms. Takes under 3 minutes. You&apos;ll receive an instant,
-                  private risk assessment with clear next steps.
+                  Each assessment has 10 straightforward questions covering risk
+                  factors and symptoms. You&apos;ll receive an instant, private risk
+                  assessment with clear next steps.
                 </p>
               </CardContent>
             </Card>

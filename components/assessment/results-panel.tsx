@@ -25,6 +25,9 @@ import {
 interface ResultsPanelProps {
   result: RiskResult;
   onRetake: () => void;
+  affiliateUrl: string;
+  learnMoreUrl: string;
+  condition: string;
 }
 
 const riskConfig = {
@@ -58,10 +61,13 @@ const riskConfig = {
   },
 };
 
-const AFFILIATE_URL =
-  "https://www.stdcheck.com/syphilis-test.php";
-
-export function ResultsPanel({ result, onRetake }: ResultsPanelProps) {
+export function ResultsPanel({
+  result,
+  onRetake,
+  affiliateUrl,
+  learnMoreUrl,
+  condition,
+}: ResultsPanelProps) {
   const config = riskConfig[result.level];
   const Icon = config.icon;
 
@@ -85,7 +91,7 @@ export function ResultsPanel({ result, onRetake }: ResultsPanelProps) {
         </CardHeader>
       </Card>
 
-      {/* What this means */}
+      {/* Next steps */}
       <Card>
         <CardHeader>
           <CardTitle className="text-lg">Recommended Next Steps</CardTitle>
@@ -96,7 +102,7 @@ export function ResultsPanel({ result, onRetake }: ResultsPanelProps) {
               <span className="text-foreground font-medium">
                 Get tested at a certified lab.
               </span>{" "}
-              A simple blood test can confirm or rule out syphilis. Results are
+              A laboratory test can confirm or rule out {condition}. Results are
               typically available within 1–2 business days.
             </li>
             <li>
@@ -117,8 +123,8 @@ export function ResultsPanel({ result, onRetake }: ResultsPanelProps) {
               <span className="text-foreground font-medium">
                 Follow up as recommended.
               </span>{" "}
-              Syphilis is fully curable with antibiotics. Early treatment
-              prevents complications.
+              Early detection and treatment prevents complications and protects
+              your health.
             </li>
           </ol>
         </CardContent>
@@ -136,7 +142,7 @@ export function ResultsPanel({ result, onRetake }: ResultsPanelProps) {
           </p>
           <Button size="lg" className="w-full sm:w-auto text-base px-8" asChild>
             <a
-              href={AFFILIATE_URL}
+              href={affiliateUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -145,10 +151,20 @@ export function ResultsPanel({ result, onRetake }: ResultsPanelProps) {
             </a>
           </Button>
           <p className="text-xs text-muted-foreground">
-            Trusted by over 1 million customers • 4,500+ certified labs nationwide
+            Trusted by over 1 million customers &bull; 4,500+ certified labs
+            nationwide
           </p>
         </CardContent>
       </Card>
+
+      {/* Secondary CTA */}
+      <div className="text-center">
+        <Button variant="outline" asChild>
+          <a href={learnMoreUrl} target="_blank" rel="noopener noreferrer">
+            Learn More About {condition}
+          </a>
+        </Button>
+      </div>
 
       <Separator />
 
@@ -159,7 +175,7 @@ export function ResultsPanel({ result, onRetake }: ResultsPanelProps) {
           <AlertDescription>
             This assessment is for <strong>educational purposes only</strong> and
             does not constitute medical advice, diagnosis, or treatment. Only a
-            laboratory test can confirm a syphilis diagnosis.
+            laboratory test can confirm a diagnosis of {condition}.
           </AlertDescription>
         </Alert>
         <Alert>

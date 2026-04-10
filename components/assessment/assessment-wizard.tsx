@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { questions } from "@/lib/questions";
+import type { AssessmentConfig } from "@/lib/assessments/types";
 import { calculateScore } from "@/lib/scoring";
 import { Button } from "@/components/ui/button";
 import { ProgressHeader } from "./progress-header";
@@ -9,7 +9,12 @@ import { QuestionStep } from "./question-step";
 import { ResultsPanel } from "./results-panel";
 import { ChevronLeft, ChevronRight, ClipboardCheck } from "lucide-react";
 
-export function AssessmentWizard() {
+interface AssessmentWizardProps {
+  config: AssessmentConfig;
+}
+
+export function AssessmentWizard({ config }: AssessmentWizardProps) {
+  const { questions } = config;
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string | string[]>>({});
   const [submitted, setSubmitted] = useState(false);
@@ -48,7 +53,7 @@ export function AssessmentWizard() {
   };
 
   if (submitted) {
-    const result = calculateScore(answers);
+    const result = calculateScore(questions, answers, config.condition);
     return (
       <div className="mx-auto max-w-2xl px-4 py-8 sm:py-12">
         <div className="text-center mb-8">
@@ -60,7 +65,13 @@ export function AssessmentWizard() {
             history
           </p>
         </div>
-        <ResultsPanel result={result} onRetake={handleRetake} />
+        <ResultsPanel
+          result={result}
+          onRetake={handleRetake}
+          affiliateUrl={config.affiliateUrl}
+          learnMoreUrl={config.learnMoreUrl}
+          condition={config.condition}
+        />
       </div>
     );
   }
