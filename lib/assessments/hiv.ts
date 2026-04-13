@@ -47,10 +47,10 @@ export const hiv: AssessmentConfig = {
         "Which of these high-risk exposures apply to you? Select all that apply.",
       type: "multi",
       options: [
-        { label: "Condomless anal or vaginal sex with a partner of unknown HIV status", points: 4 },
         { label: "Shared needles, syringes, or injection equipment", points: 5 },
         { label: "Sexual contact with someone living with HIV (not virally suppressed)", points: 5 },
         { label: "Occupational exposure (needlestick, blood splash)", points: 3 },
+        { label: "Blood transfusion or medical procedure in a country with limited screening", points: 3 },
         { label: "None of these", points: 0 },
       ],
     },

@@ -71,11 +71,11 @@ export const pid: AssessmentConfig = {
       id: 5,
       category: "exposure",
       question:
-        "Have you recently had symptoms that might suggest an untreated cervical or vaginal infection (unusual discharge, odor, or irritation)?",
+        "Do you currently have or have you recently been treated for bacterial vaginosis (BV)? (BV disrupts vaginal flora and increases the risk of PID.)",
       type: "single",
       options: [
-        { label: "Yes, and I have not been treated", points: 3 },
-        { label: "Yes, but I received treatment", points: 1 },
+        { label: "Yes, I currently have BV or BV-like symptoms", points: 3 },
+        { label: "Yes, I was treated for BV recently", points: 2 },
         { label: "No", points: 0 },
         { label: "Unsure", points: 1 },
       ],

@@ -72,7 +72,7 @@ export const gonorrhea: AssessmentConfig = {
         { label: "Vaginal intercourse without a condom", points: 2 },
         { label: "Anal intercourse without a condom", points: 3 },
         { label: "Giving oral sex without protection", points: 2 },
-        { label: "I have had a new sexual partner recently", points: 2 },
+        { label: "Receiving oral sex from a partner", points: 1 },
         { label: "None of the above", points: 0 },
       ],
     },

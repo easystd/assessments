@@ -73,7 +73,7 @@ export const syphilis: AssessmentConfig = {
       options: [
         { label: "I have met partners through apps or anonymous encounters", points: 2 },
         { label: "I have exchanged sex for money, drugs, or housing", points: 3 },
-        { label: "I rarely or never use condoms during sex", points: 3 },
+        { label: "I have had 3 or more sexual partners in the past 6 months", points: 3 },
         { label: "I have had sex while under the influence of drugs or alcohol", points: 1 },
         { label: "None of these apply", points: 0 },
       ],

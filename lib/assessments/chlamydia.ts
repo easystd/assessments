@@ -131,15 +131,15 @@ export const chlamydia: AssessmentConfig = {
     },
     {
       id: 10,
-      category: "context",
+      category: "symptoms",
       question:
-        "When were you last screened for chlamydia? (Annual screening is recommended for sexually active women under 25 and for MSM.)",
+        "When did your symptoms begin relative to a possible exposure? (Chlamydia symptoms typically appear 7–21 days after contact, if they appear at all.)",
       type: "single",
       options: [
-        { label: "I have never been screened", points: 3 },
-        { label: "More than 1 year ago", points: 2 },
-        { label: "Within the past 6–12 months", points: 1 },
-        { label: "Within the past 6 months", points: 0 },
+        { label: "Within 1–3 weeks of a new sexual contact", points: 4 },
+        { label: "More than 3 weeks after contact", points: 2 },
+        { label: "I'm not sure of the timing", points: 1 },
+        { label: "I have not had any symptoms", points: 0 },
       ],
     },
   ],
