@@ -42,14 +42,14 @@ export const herpes: AssessmentConfig = {
     {
       id: 3,
       category: "exposure",
-      question: "How many sexual partners have you had in the past 12 months?",
+      question:
+        "How many lifetime sexual partners have you had? (Herpes risk is cumulative — the virus can transmit even without visible symptoms.)",
       type: "single",
       options: [
+        { label: "10 or more", points: 3 },
+        { label: "4–9", points: 2 },
+        { label: "1–3", points: 1 },
         { label: "None", points: 0 },
-        { label: "1", points: 1 },
-        { label: "2–4", points: 2 },
-        { label: "5 or more", points: 3 },
-        { label: "Prefer not to say", points: 2 },
       ],
     },
     {

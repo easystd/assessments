@@ -41,14 +41,14 @@ export const hpv: AssessmentConfig = {
     {
       id: 3,
       category: "exposure",
-      question: "How many sexual partners have you had in your lifetime?",
+      question:
+        "At what age did you first become sexually active? (Earlier sexual debut increases cumulative HPV exposure.)",
       type: "single",
       options: [
-        { label: "None", points: 0 },
-        { label: "1–2", points: 1 },
-        { label: "3–5", points: 2 },
-        { label: "6 or more", points: 3 },
-        { label: "Prefer not to say", points: 2 },
+        { label: "Under 16", points: 3 },
+        { label: "16–18", points: 2 },
+        { label: "19 or older", points: 1 },
+        { label: "Not yet sexually active", points: 0 },
       ],
     },
     {

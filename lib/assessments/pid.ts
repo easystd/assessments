@@ -57,27 +57,27 @@ export const pid: AssessmentConfig = {
     {
       id: 4,
       category: "exposure",
-      question: "How many sexual partners have you had in the past 12 months?",
-      type: "single",
+      question:
+        "Which of the following describe your recent sexual activity? Select all that apply.",
+      type: "multi",
       options: [
-        { label: "None", points: 0 },
-        { label: "1", points: 1 },
-        { label: "2–4", points: 2 },
-        { label: "5 or more", points: 3 },
-        { label: "Prefer not to say", points: 2 },
+        { label: "Condomless sex with a new or casual partner", points: 3 },
+        { label: "Multiple sexual partners in the past 12 months", points: 2 },
+        { label: "A partner who may have other sexual partners", points: 2 },
+        { label: "None of these or not sexually active", points: 0 },
       ],
     },
     {
       id: 5,
       category: "exposure",
-      question: "How consistently do you use condoms during sexual contact?",
+      question:
+        "Have you recently had symptoms that might suggest an untreated cervical or vaginal infection (unusual discharge, odor, or irritation)?",
       type: "single",
       options: [
-        { label: "Always", points: 0 },
-        { label: "Most of the time", points: 1 },
-        { label: "Sometimes", points: 2 },
-        { label: "Rarely or never", points: 3 },
-        { label: "Not applicable", points: 0 },
+        { label: "Yes, and I have not been treated", points: 3 },
+        { label: "Yes, but I received treatment", points: 1 },
+        { label: "No", points: 0 },
+        { label: "Unsure", points: 1 },
       ],
     },
     {
