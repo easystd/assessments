@@ -53,9 +53,9 @@ const questions: SymptomCheckerQuestion[] = [
     type: "single",
     options: [
       { label: "Under 25", scores: { ch: 3, gn: 3, hp: 2, pd: 2 } },
-      { label: "25–34", scores: { sy: 3, hv: 2, gn: 2, ch: 2 } },
-      { label: "35–44", scores: { sy: 2, hv: 2 } },
-      { label: "45 or older", scores: { ut: 1 } },
+      { label: "25–34", scores: { sy: 3, hv: 2, gn: 2, ch: 2, tr: 1 } },
+      { label: "35–44", scores: { sy: 2, hv: 2, tr: 2 } },
+      { label: "45 or older", scores: { ut: 1, tr: 1 } },
     ],
   },
   {
@@ -64,7 +64,7 @@ const questions: SymptomCheckerQuestion[] = [
     question: "Are you currently pregnant or planning a pregnancy?",
     type: "single",
     options: [
-      { label: "Yes, currently pregnant", scores: { ch: 2, sy: 3, hv: 2, bv: 2, hs: 2 } },
+      { label: "Yes, currently pregnant", scores: { ch: 2, sy: 3, hv: 2, bv: 2, hs: 2, tr: 1 } },
       { label: "Yes, planning a pregnancy", scores: { ch: 1, sy: 2, hv: 1 } },
       { label: "No", scores: {} },
       { label: "Not applicable", scores: {} },
@@ -76,10 +76,22 @@ const questions: SymptomCheckerQuestion[] = [
     question: "Have you been diagnosed with an STI before?",
     type: "single",
     options: [
-      { label: "Yes, within the past year", scores: { ch: 3, gn: 3, sy: 2, hv: 2, hs: 1, pd: 2 } },
-      { label: "Yes, more than a year ago", scores: { ch: 1, gn: 1, sy: 1 } },
+      { label: "Yes, within the past year", scores: { ch: 3, gn: 3, sy: 2, hv: 2, hs: 1, pd: 2, tr: 2 } },
+      { label: "Yes, more than a year ago", scores: { ch: 1, gn: 1, sy: 1, tr: 1 } },
       { label: "No", scores: {} },
       { label: "Unsure", scores: { ch: 1, gn: 1, sy: 1, hv: 1 } },
+    ],
+  },
+  {
+    id: 5,
+    category: "context",
+    question: "Have you been vaccinated against HPV?",
+    type: "single",
+    options: [
+      { label: "No", scores: { hp: 3 } },
+      { label: "Yes, but I didn't complete the full series", scores: { hp: 2 } },
+      { label: "Yes, I completed the full series", scores: {} },
+      { label: "Unsure", scores: { hp: 2 } },
     ],
   },
 
@@ -87,7 +99,7 @@ const questions: SymptomCheckerQuestion[] = [
   // SECTION 2: EXPOSURE (×1.0 weight)
   // ============================================================
   {
-    id: 5,
+    id: 6,
     category: "exposure",
     question: "How many sexual partners have you had in the past 6 months?",
     type: "single",
@@ -99,13 +111,13 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     category: "exposure",
     question:
       "What types of sexual contact have you had recently without a condom or barrier? Select all that apply.",
     type: "multi",
     options: [
-      { label: "Vaginal intercourse", scores: { ch: 3, gn: 3, hv: 2, hs: 2, hp: 2, sy: 2, tr: 3, bv: 1 } },
+      { label: "Vaginal intercourse", scores: { ch: 3, gn: 3, hv: 2, hs: 2, hp: 2, sy: 2, tr: 3, bv: 1, pd: 2 } },
       { label: "Anal intercourse", scores: { gn: 3, hv: 4, sy: 3, ch: 2, hs: 2, hp: 2 } },
       { label: "Oral sex (giving)", scores: { gn: 3, sy: 3, hs: 2, hp: 1 } },
       { label: "Oral sex (receiving)", scores: { hs: 2, gn: 1, sy: 1 } },
@@ -114,19 +126,19 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     category: "exposure",
     question:
       "Has a sexual partner been diagnosed with an STD, or have you been notified of an exposure?",
     type: "single",
     options: [
-      { label: "Yes", scores: { ch: 4, gn: 4, sy: 4, hv: 4, hs: 4, hp: 3, tr: 3 } },
+      { label: "Yes", scores: { ch: 4, gn: 4, sy: 4, hv: 4, hs: 4, hp: 3, tr: 3, pd: 2 } },
       { label: "No", scores: {} },
       { label: "Unsure", scores: { ch: 1, gn: 1, sy: 1, hv: 1, hs: 1 } },
     ],
   },
   {
-    id: 8,
+    id: 9,
     category: "exposure",
     question: "Have you shared needles, syringes, or injection equipment?",
     type: "single",
@@ -137,7 +149,7 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     category: "exposure",
     question:
       "Do any of these additional risk factors apply? Select all that apply.",
@@ -146,8 +158,10 @@ const questions: SymptomCheckerQuestion[] = [
       { label: "I have met partners through apps or anonymous encounters", scores: { sy: 2, hv: 2, gn: 2 } },
       { label: "I have exchanged sex for money, drugs, or housing", scores: { hv: 3, sy: 3, gn: 2, ch: 2 } },
       { label: "I have a weakened immune system (HIV, immunosuppressive medication)", scores: { hs: 2, hp: 3, yi: 2 } },
-      { label: "I use vaginal douches or scented products", scores: { bv: 4, yi: 1 } },
+      { label: "I currently have an IUD (intrauterine device)", scores: { pd: 3 } },
+      { label: "I use vaginal douches or scented products", scores: { bv: 4, yi: 1, pd: 2 } },
       { label: "I recently took antibiotics", scores: { yi: 4, bv: 2 } },
+      { label: "I have diabetes or use a urinary catheter", scores: { ut: 3, yi: 2 } },
       { label: "None of these apply", scores: {} },
     ],
   },
@@ -156,7 +170,7 @@ const questions: SymptomCheckerQuestion[] = [
   // SECTION 3: SYMPTOMS (×1.2 weight)
   // ============================================================
   {
-    id: 10,
+    id: 11,
     category: "symptoms",
     question: "Have you noticed any unusual genital discharge?",
     type: "single",
@@ -171,7 +185,7 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     category: "symptoms",
     question:
       "Have you noticed any sores, blisters, warts, or unusual growths on your genitals, anus, or mouth?",
@@ -185,18 +199,18 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     category: "symptoms",
     question: "Are you experiencing pain or burning during urination?",
     type: "single",
     options: [
-      { label: "Yes, severe burning", scores: { ut: 5, gn: 4, ch: 3 } },
-      { label: "Yes, mild discomfort", scores: { ut: 3, ch: 2, gn: 2, hs: 1, yi: 1 } },
+      { label: "Yes, severe burning", scores: { ut: 5, gn: 4, ch: 3, tr: 2 } },
+      { label: "Yes, mild discomfort", scores: { ut: 3, ch: 2, gn: 2, hs: 1, yi: 1, tr: 1 } },
       { label: "No", scores: {} },
     ],
   },
   {
-    id: 13,
+    id: 14,
     category: "symptoms",
     question: "Are you experiencing genital itching or irritation?",
     type: "single",
@@ -207,18 +221,43 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     category: "symptoms",
     question: "Are you experiencing pelvic or lower abdominal pain?",
     type: "single",
     options: [
-      { label: "Yes, moderate to severe pain", scores: { pd: 5, gn: 2, ch: 2 } },
-      { label: "Yes, mild or dull discomfort", scores: { pd: 3, ch: 1, gn: 1, ut: 2 } },
+      { label: "Yes, moderate to severe pain", scores: { pd: 5, gn: 2, ch: 2, tr: 1 } },
+      { label: "Yes, mild or dull discomfort", scores: { pd: 3, ch: 1, gn: 1, ut: 2, tr: 1 } },
       { label: "No", scores: {} },
     ],
   },
   {
-    id: 15,
+    id: 16,
+    category: "symptoms",
+    question: "Do you experience pain during sexual intercourse?",
+    type: "single",
+    options: [
+      { label: "Yes, deep internal pain", scores: { pd: 5, ch: 2, gn: 2 } },
+      { label: "Yes, pain or stinging at the entrance or on the surface", scores: { hs: 4, yi: 3, tr: 2, bv: 1 } },
+      { label: "No or not sexually active", scores: {} },
+    ],
+  },
+  {
+    id: 17,
+    category: "symptoms",
+    question:
+      "Have you noticed abnormal vaginal bleeding between periods or after sex?",
+    type: "single",
+    options: [
+      { label: "Yes, bleeding between periods", scores: { pd: 4, ch: 3, gn: 2 } },
+      { label: "Yes, bleeding after sexual intercourse", scores: { pd: 3, ch: 2, gn: 2, hp: 2 } },
+      { label: "Yes, both", scores: { pd: 5, ch: 3, gn: 3, hp: 2 } },
+      { label: "No", scores: {} },
+      { label: "Not applicable", scores: {} },
+    ],
+  },
+  {
+    id: 18,
     category: "symptoms",
     question:
       "Have you experienced any of these urinary symptoms? Select all that apply.",
@@ -231,7 +270,7 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 16,
+    id: 19,
     category: "symptoms",
     question:
       "Have you noticed any skin changes, rashes, or hair loss? Select all that apply.",
@@ -244,7 +283,7 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 17,
+    id: 20,
     category: "symptoms",
     question:
       "Have you experienced any of these systemic symptoms? Select all that apply.",
@@ -258,21 +297,21 @@ const questions: SymptomCheckerQuestion[] = [
     ],
   },
   {
-    id: 18,
+    id: 21,
     category: "symptoms",
     question:
       "Have you noticed symptoms in any of these areas? Select all that apply.",
     type: "multi",
     options: [
       { label: "Rectal pain, discharge, or bleeding", scores: { gn: 3, ch: 3, hs: 2, sy: 2 } },
-      { label: "Persistent sore throat after oral sexual contact", scores: { gn: 3, sy: 2 } },
+      { label: "Persistent sore throat after oral sexual contact", scores: { gn: 3, sy: 2, hp: 2 } },
       { label: "Eye redness, pain, or discharge", scores: { ch: 2, gn: 2 } },
       { label: "Joint pain or swelling with skin lesions", scores: { gn: 4, sy: 1 } },
       { label: "None of these", scores: {} },
     ],
   },
   {
-    id: 19,
+    id: 22,
     category: "symptoms",
     question:
       "Do any of these patterns apply to your symptoms? Select all that apply.",
@@ -283,17 +322,18 @@ const questions: SymptomCheckerQuestion[] = [
       { label: "A painless sore that healed on its own, then a rash appeared", scores: { sy: 5 } },
       { label: "Fishy odor that worsens after sex or during menstruation", scores: { bv: 4 } },
       { label: "Symptoms worsened after taking antibiotics", scores: { yi: 4 } },
+      { label: "Symptoms appeared or worsened around your menstrual period", scores: { tr: 3, bv: 2 } },
       { label: "None of these", scores: {} },
     ],
   },
   {
-    id: 20,
+    id: 23,
     category: "symptoms",
     question: "When did your symptoms first appear?",
     type: "single",
     options: [
-      { label: "Within the past 1–2 weeks", scores: { gn: 3, ch: 2, ut: 3, yi: 2 } },
-      { label: "2–4 weeks ago", scores: { sy: 3, hv: 4, ch: 2 } },
+      { label: "Within the past 1–2 weeks", scores: { gn: 3, ch: 2, ut: 3, yi: 2, tr: 2 } },
+      { label: "2–4 weeks ago", scores: { sy: 3, hv: 4, ch: 2, tr: 2 } },
       { label: "1–3 months ago", scores: { sy: 3, hs: 2, hp: 1 } },
       { label: "More than 3 months ago", scores: { hv: 2, hp: 1, sy: 1 } },
       { label: "I have not had any symptoms", scores: {} },
@@ -310,11 +350,11 @@ export const symptomChecker: SymptomCheckerConfig = {
   headline: "STD Symptom Checker",
   subtitle: "Free, Private Risk Assessment & Recommendation Tool",
   description:
-    "Answer 20 questions about your symptoms and risk factors. Get a personalized list of STDs you may want to test for.",
+    "Answer a few questions about your symptoms and risk factors. Get a personalized list of conditions you may want to test for.",
   metaTitle:
     "STD Symptom Checker | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous STD symptom checker. Answer 20 questions about your symptoms and risk factors. Get personalized testing recommendations.",
+    "Take our free, anonymous STD symptom checker. Answer questions about your symptoms and risk factors. Get personalized testing recommendations.",
   conditions,
   questions,
 };
