@@ -2,16 +2,16 @@ import type { AssessmentConfig } from "./types";
 
 export const herpes: AssessmentConfig = {
   slug: "genital-herpes",
-  condition: "Genital Herpes (HSV-2)",
+  condition: "Genital Herpes (HSV-1 & HSV-2)",
   shortName: "Herpes",
   headline: "Do I Have Genital Herpes?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle:
     "Do I Have Genital Herpes? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous genital herpes risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous genital herpes risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/herpes-test.php",
   learnMoreUrl: "https://easystd.com/genital-herpes",
   questions: [
@@ -21,7 +21,7 @@ export const herpes: AssessmentConfig = {
       question: "Have you ever been specifically tested for herpes (HSV blood test or swab)?",
       type: "single",
       options: [
-        { label: "Yes, and it was positive", points: 5 },
+        { label: "Yes, and it was positive", points: 2 },
         { label: "Yes, and it was negative", points: 0 },
         { label: "No — herpes is often not included in standard STI panels", points: 2 },
         { label: "Unsure", points: 2 },
@@ -41,6 +41,18 @@ export const herpes: AssessmentConfig = {
     },
     {
       id: 3,
+      category: "context",
+      question: "Are you currently pregnant or planning to become pregnant?",
+      type: "single",
+      options: [
+        { label: "Yes, and I have or suspect herpes", points: 3 },
+        { label: "Yes, but I have no herpes concerns", points: 1 },
+        { label: "No", points: 0 },
+        { label: "Not applicable", points: 0 },
+      ],
+    },
+    {
+      id: 4,
       category: "exposure",
       question:
         "How many lifetime sexual partners have you had? (Herpes risk is cumulative — the virus can transmit even without visible symptoms.)",
@@ -53,7 +65,7 @@ export const herpes: AssessmentConfig = {
       ],
     },
     {
-      id: 4,
+      id: 5,
       category: "exposure",
       question:
         "What types of skin-to-skin intimate contact have you had recently? Select all that apply.",
@@ -67,7 +79,7 @@ export const herpes: AssessmentConfig = {
       ],
     },
     {
-      id: 5,
+      id: 6,
       category: "exposure",
       question:
         "How consistently do you use condoms? (Note: condoms reduce but do not fully prevent herpes, which spreads via skin-to-skin contact.)",
@@ -81,7 +93,7 @@ export const herpes: AssessmentConfig = {
       ],
     },
     {
-      id: 6,
+      id: 7,
       category: "exposure",
       question: "Has a sexual partner told you they have genital herpes (HSV-1 or HSV-2)?",
       type: "single",
@@ -92,7 +104,7 @@ export const herpes: AssessmentConfig = {
       ],
     },
     {
-      id: 7,
+      id: 8,
       category: "symptoms",
       question:
         "Have you noticed any painful blisters, sores, or ulcers on or around your genitals, buttocks, thighs, or anus?",
@@ -106,7 +118,7 @@ export const herpes: AssessmentConfig = {
       ],
     },
     {
-      id: 8,
+      id: 9,
       category: "symptoms",
       question:
         "Have you experienced any of these prodromal or outbreak-associated symptoms? Select all that apply.",
@@ -120,7 +132,7 @@ export const herpes: AssessmentConfig = {
       ],
     },
     {
-      id: 9,
+      id: 10,
       category: "exposure",
       question:
         "Do any of these factors that increase herpes susceptibility apply to you? Select all that apply.",
@@ -133,7 +145,7 @@ export const herpes: AssessmentConfig = {
       ],
     },
     {
-      id: 10,
+      id: 11,
       category: "symptoms",
       question: "How would you describe the pattern of your symptoms?",
       type: "single",

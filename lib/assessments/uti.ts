@@ -7,11 +7,11 @@ export const uti: AssessmentConfig = {
   headline: "Do I Have a UTI?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle:
     "Do I Have a UTI? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous UTI risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous UTI risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/std-test-panel.php",
   learnMoreUrl: "https://easystd.com/urinary-tract-infection-uti",
   questions: [
@@ -85,14 +85,25 @@ export const uti: AssessmentConfig = {
       question: "Have you recently taken antibiotics for any reason?",
       type: "single",
       options: [
-        { label: "Yes, I recently finished a course of antibiotics", points: 1 },
-        { label: "Yes, I am currently on antibiotics for something else", points: 1 },
+        { label: "Yes, I recently finished a course of antibiotics", points: 2 },
+        { label: "Yes, I am currently on antibiotics for something else", points: 2 },
         { label: "No", points: 0 },
         { label: "Unsure", points: 0 },
       ],
     },
     {
       id: 7,
+      category: "exposure",
+      question: "Did your symptoms begin within 24–48 hours after sexual intercourse?",
+      type: "single",
+      options: [
+        { label: "Yes", points: 3 },
+        { label: "No or unsure", points: 0 },
+        { label: "I haven't been sexually active recently", points: 0 },
+      ],
+    },
+    {
+      id: 8,
       category: "symptoms",
       question: "Are you experiencing a strong, persistent urge to urinate?",
       type: "single",
@@ -104,35 +115,35 @@ export const uti: AssessmentConfig = {
       ],
     },
     {
-      id: 8,
+      id: 9,
       category: "symptoms",
       question:
         "Have you experienced any of these lower urinary tract symptoms? Select all that apply.",
       type: "multi",
       options: [
         { label: "Burning or stinging pain during urination", points: 5 },
-        { label: "Passing only small amounts of urine despite strong urge", points: 3 },
+        { label: "Pressure or discomfort in the lower abdomen or pelvis", points: 3 },
         { label: "Cloudy, dark, or strong-smelling urine", points: 3 },
         { label: "Blood in urine (pink, red, or cola-colored)", points: 4 },
         { label: "None of these", points: 0 },
       ],
     },
     {
-      id: 9,
+      id: 10,
       category: "symptoms",
       question:
         "Have you noticed any of these signs that may suggest the infection has spread to your kidneys? Select all that apply.",
       type: "multi",
       options: [
         { label: "Pain in your lower back, side, or flank (below the ribs)", points: 4 },
-        { label: "Fever (100.4°F / 38°C or higher) or chills", points: 4 },
+        { label: "Fever (100.4\u00B0F / 38\u00B0C or higher) or chills", points: 4 },
         { label: "Nausea or vomiting", points: 3 },
         { label: "Feeling generally unwell or shaky beyond just urinary discomfort", points: 2 },
         { label: "None of these", points: 0 },
       ],
     },
     {
-      id: 10,
+      id: 11,
       category: "symptoms",
       question: "When did these urinary symptoms begin?",
       type: "single",

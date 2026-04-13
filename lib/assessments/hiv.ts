@@ -7,15 +7,40 @@ export const hiv: AssessmentConfig = {
   headline: "Do I Have HIV?",
   subtitle: "Free, Private Risk & Symptom Assessment",
   description:
-    "Answer 10 simple questions about your risk factors and symptoms. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your risk factors and symptoms. Get personalized guidance in under 3 minutes.",
   metaTitle: "Do I Have HIV? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous HIV risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous HIV risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/hiv-test.php",
   learnMoreUrl: "https://easystd.com/hiv-aids",
   questions: [
     {
       id: 1,
+      category: "context",
+      question: "What is your sex or gender?",
+      type: "single",
+      options: [
+        { label: "Man who has sex with men (MSM)", points: 3 },
+        { label: "Transgender woman", points: 3 },
+        { label: "Man who has sex with women only", points: 1 },
+        { label: "Woman", points: 1 },
+        { label: "Prefer not to say", points: 1 },
+      ],
+    },
+    {
+      id: 2,
+      category: "context",
+      question: "Are you currently pregnant or planning a pregnancy?",
+      type: "single",
+      options: [
+        { label: "Yes, currently pregnant", points: 2 },
+        { label: "Yes, planning a pregnancy", points: 1 },
+        { label: "No", points: 0 },
+        { label: "Not applicable", points: 0 },
+      ],
+    },
+    {
+      id: 3,
       category: "context",
       question: "When were you last tested for HIV?",
       type: "single",
@@ -28,7 +53,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 2,
+      id: 4,
       category: "context",
       question: "Are you currently taking PrEP (pre-exposure prophylaxis) or PEP (post-exposure prophylaxis)?",
       type: "single",
@@ -37,11 +62,11 @@ export const hiv: AssessmentConfig = {
         { label: "Yes, but I sometimes miss doses", points: 1 },
         { label: "I recently started PEP after an exposure", points: 2 },
         { label: "No", points: 2 },
-        { label: "I'm not sure what PrEP/PEP is", points: 2 },
+        { label: "I'm not sure what PrEP/PEP is", points: 1 },
       ],
     },
     {
-      id: 3,
+      id: 5,
       category: "exposure",
       question:
         "Which of these high-risk exposures apply to you? Select all that apply.",
@@ -55,7 +80,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 4,
+      id: 6,
       category: "exposure",
       question:
         "What types of sexual contact have you had recently without a condom? Select all that apply.",
@@ -69,7 +94,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 5,
+      id: 7,
       category: "exposure",
       question:
         "Have you been diagnosed with another STI (syphilis, gonorrhea, chlamydia, herpes) in the past 12 months?",
@@ -81,7 +106,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 6,
+      id: 8,
       category: "exposure",
       question:
         "Do any of these additional risk contexts apply? Select all that apply.",
@@ -95,7 +120,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 7,
+      id: 9,
       category: "symptoms",
       question:
         "Within 2–4 weeks after a potential exposure, did you experience a flu-like illness?",
@@ -108,7 +133,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 8,
+      id: 10,
       category: "symptoms",
       question:
         "Have you experienced any of these persistent symptoms lasting weeks or longer? Select all that apply.",
@@ -122,7 +147,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 9,
+      id: 11,
       category: "symptoms",
       question:
         "Have you noticed any of these signs that may suggest immune suppression? Select all that apply.",
@@ -136,7 +161,7 @@ export const hiv: AssessmentConfig = {
       ],
     },
     {
-      id: 10,
+      id: 12,
       category: "symptoms",
       question: "When did your symptoms first appear relative to a potential exposure?",
       type: "single",

@@ -7,11 +7,11 @@ export const pid: AssessmentConfig = {
   headline: "Do I Have Pelvic Inflammatory Disease?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle:
     "Do I Have PID? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous pelvic inflammatory disease risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous pelvic inflammatory disease risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/std-test-panel.php",
   learnMoreUrl: "https://easystd.com/pelvic-inflammatory-disease-pid",
   questions: [
@@ -114,7 +114,7 @@ export const pid: AssessmentConfig = {
       options: [
         { label: "Unusual or heavier-than-normal vaginal discharge", points: 3 },
         { label: "Foul-smelling vaginal discharge", points: 4 },
-        { label: "Fever (100.4°F / 38°C or higher) or chills", points: 4 },
+        { label: "Fever (100.4\u00B0F / 38\u00B0C or higher) or chills", points: 4 },
         { label: "Pain during sexual intercourse (deep pelvic pain)", points: 3 },
         { label: "None of these", points: 0 },
       ],
@@ -136,10 +136,23 @@ export const pid: AssessmentConfig = {
     {
       id: 10,
       category: "symptoms",
+      question:
+        "Have you experienced any of these signs of a more severe infection? Select all that apply.",
+      type: "multi",
+      options: [
+        { label: "Nausea or vomiting along with pelvic pain", points: 3 },
+        { label: "Pain in the upper right abdomen (below the ribs)", points: 3 },
+        { label: "Unable to keep food or fluids down", points: 2 },
+        { label: "None of these", points: 0 },
+      ],
+    },
+    {
+      id: 11,
+      category: "symptoms",
       question: "When did these symptoms begin?",
       type: "single",
       options: [
-        { label: "Within the past few days", points: 3 },
+        { label: "Within the past few days (acute onset)", points: 4 },
         { label: "Within the past 1–2 weeks", points: 3 },
         { label: "They have been building gradually over weeks", points: 2 },
         { label: "I haven't had any symptoms", points: 0 },

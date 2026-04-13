@@ -7,11 +7,11 @@ export const yeastInfection: AssessmentConfig = {
   headline: "Do I Have a Yeast Infection?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle:
     "Do I Have a Yeast Infection? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous yeast infection risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous yeast infection risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/std-test-panel.php",
   learnMoreUrl: "https://easystd.com/vaginal-yeast-infection",
   questions: [
@@ -21,8 +21,8 @@ export const yeastInfection: AssessmentConfig = {
       question: "Have you had a yeast infection before?",
       type: "single",
       options: [
-        { label: "Yes, 4 or more times in the past year (recurrent)", points: 5 },
-        { label: "Yes, 1–3 times in the past year", points: 3 },
+        { label: "Yes, 4 or more times in the past year (recurrent)", points: 3 },
+        { label: "Yes, 1–3 times in the past year", points: 2 },
         { label: "Yes, but more than a year ago", points: 1 },
         { label: "No or unsure", points: 0 },
       ],
@@ -109,7 +109,7 @@ export const yeastInfection: AssessmentConfig = {
       question: "Have you noticed any unusual vaginal discharge?",
       type: "single",
       options: [
-        { label: "Yes, thick, white, cottage cheese–like discharge with no strong odor", points: 5 },
+        { label: "Yes, thick, white, cottage cheese\u2013like discharge with no strong odor", points: 5 },
         { label: "Yes, white or clumpy discharge", points: 3 },
         { label: "Yes, thin or watery discharge with a fishy smell (more like BV)", points: 0 },
         { label: "No unusual discharge", points: 0 },
@@ -139,6 +139,19 @@ export const yeastInfection: AssessmentConfig = {
         { label: "Within the past few days — but I've had yeast infections before and this feels the same", points: 4 },
         { label: "They keep coming back every few months (recurrent pattern)", points: 4 },
         { label: "I haven't had any symptoms", points: 0 },
+        { label: "Unsure", points: 1 },
+      ],
+    },
+    {
+      id: 11,
+      category: "symptoms",
+      question:
+        "Have you tried over-the-counter antifungal treatment (Monistat, clotrimazole)? If so, did it help?",
+      type: "single",
+      options: [
+        { label: "Yes, and it resolved my symptoms", points: 2 },
+        { label: "Yes, but my symptoms did not improve or came back quickly", points: 4 },
+        { label: "No, I have not tried OTC treatment", points: 0 },
         { label: "Unsure", points: 1 },
       ],
     },

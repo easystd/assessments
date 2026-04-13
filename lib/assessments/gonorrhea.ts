@@ -7,10 +7,10 @@ export const gonorrhea: AssessmentConfig = {
   headline: "Do I Have Gonorrhea?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle: "Do I Have Gonorrhea? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous gonorrhea risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous gonorrhea risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/gonorrhea-test.php",
   learnMoreUrl: "https://easystd.com/gonorrhea",
   questions: [
@@ -41,7 +41,7 @@ export const gonorrhea: AssessmentConfig = {
     {
       id: 3,
       category: "context",
-      question: "Have you been diagnosed with gonorrhea or another STI before?",
+      question: "Have you been diagnosed with gonorrhea, chlamydia, or another STI before?",
       type: "single",
       options: [
         { label: "Yes, gonorrhea specifically", points: 3 },
@@ -66,12 +66,12 @@ export const gonorrhea: AssessmentConfig = {
       id: 5,
       category: "exposure",
       question:
-        "Which types of recent sexual contact or risk factors apply to you? Select all that apply.",
+        "Which types of recent sexual contact apply to you? Select all that apply.",
       type: "multi",
       options: [
         { label: "Vaginal intercourse without a condom", points: 2 },
         { label: "Anal intercourse without a condom", points: 3 },
-        { label: "Giving oral sex without protection", points: 2 },
+        { label: "Giving oral sex without protection", points: 3 },
         { label: "Receiving oral sex from a partner", points: 1 },
         { label: "None of the above", points: 0 },
       ],
@@ -130,6 +130,19 @@ export const gonorrhea: AssessmentConfig = {
     },
     {
       id: 10,
+      category: "symptoms",
+      question:
+        "Have you experienced any joint pain, swelling, or skin lesions (small pus-filled spots) that appeared around the same time as other symptoms?",
+      type: "single",
+      options: [
+        { label: "Yes, joint pain or swelling along with skin lesions", points: 4 },
+        { label: "Yes, joint pain or swelling only", points: 3 },
+        { label: "No", points: 0 },
+        { label: "Unsure", points: 1 },
+      ],
+    },
+    {
+      id: 11,
       category: "symptoms",
       question:
         "When did your symptoms first appear after your most recent sexual contact?",

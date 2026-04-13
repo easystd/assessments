@@ -7,11 +7,11 @@ export const bacterialVaginosis: AssessmentConfig = {
   headline: "Do I Have Bacterial Vaginosis?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle:
     "Do I Have Bacterial Vaginosis? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous bacterial vaginosis risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous bacterial vaginosis risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/std-test-panel.php",
   learnMoreUrl: "https://easystd.com/bacterial-vaginosis",
   questions: [
@@ -81,7 +81,7 @@ export const bacterialVaginosis: AssessmentConfig = {
       question: "Have you recently taken antibiotics for any reason?",
       type: "single",
       options: [
-        { label: "Yes, within the past month", points: 2 },
+        { label: "Yes, within the past month", points: 3 },
         { label: "Yes, within the past 3 months", points: 1 },
         { label: "No", points: 0 },
         { label: "Unsure", points: 1 },
@@ -89,6 +89,17 @@ export const bacterialVaginosis: AssessmentConfig = {
     },
     {
       id: 7,
+      category: "exposure",
+      question: "Do you currently have an IUD (intrauterine device)?",
+      type: "single",
+      options: [
+        { label: "Yes", points: 2 },
+        { label: "No", points: 0 },
+        { label: "Unsure", points: 0 },
+      ],
+    },
+    {
+      id: 8,
       category: "symptoms",
       question: "Have you noticed any unusual vaginal discharge?",
       type: "single",
@@ -100,7 +111,7 @@ export const bacterialVaginosis: AssessmentConfig = {
       ],
     },
     {
-      id: 8,
+      id: 9,
       category: "symptoms",
       question: "Have you noticed a vaginal odor?",
       type: "single",
@@ -112,20 +123,33 @@ export const bacterialVaginosis: AssessmentConfig = {
       ],
     },
     {
-      id: 9,
+      id: 10,
       category: "symptoms",
       question:
         "How does your discharge compare to typical yeast infection symptoms?",
       type: "single",
       options: [
-        { label: "My discharge is thin and watery — NOT thick or cottage cheese-like", points: 4 },
+        { label: "My discharge is thin and watery — NOT thick or cottage cheese-like", points: 2 },
         { label: "My discharge is thick, white, and clumpy (more like a yeast infection)", points: 0 },
-        { label: "I'm not sure how to describe it", points: 2 },
+        { label: "I'm not sure how to describe it", points: 1 },
         { label: "I don't have unusual discharge", points: 0 },
       ],
     },
     {
-      id: 10,
+      id: 11,
+      category: "symptoms",
+      question:
+        "Do your symptoms seem to worsen during or just after your menstrual period?",
+      type: "single",
+      options: [
+        { label: "Yes, noticeably worse during or after my period", points: 3 },
+        { label: "Possibly, I'm not sure", points: 1 },
+        { label: "No", points: 0 },
+        { label: "Not applicable (no periods)", points: 0 },
+      ],
+    },
+    {
+      id: 12,
       category: "symptoms",
       question: "When did these symptoms start, and do they recur?",
       type: "single",

@@ -7,10 +7,10 @@ export const chlamydia: AssessmentConfig = {
   headline: "Do I Have Chlamydia?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle: "Do I Have Chlamydia? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous chlamydia risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous chlamydia risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/chlamydia-test.php",
   learnMoreUrl: "https://easystd.com/chlamydia",
   questions: [
@@ -41,7 +41,7 @@ export const chlamydia: AssessmentConfig = {
     {
       id: 3,
       category: "context",
-      question: "Have you been diagnosed with chlamydia before?",
+      question: "Have you been diagnosed with chlamydia or gonorrhea before?",
       type: "single",
       options: [
         { label: "Yes, within the past 12 months", points: 4 },
@@ -52,6 +52,18 @@ export const chlamydia: AssessmentConfig = {
     },
     {
       id: 4,
+      category: "context",
+      question: "Are you currently pregnant or planning a pregnancy?",
+      type: "single",
+      options: [
+        { label: "Yes, currently pregnant", points: 3 },
+        { label: "Yes, planning a pregnancy", points: 2 },
+        { label: "No", points: 0 },
+        { label: "Not applicable", points: 0 },
+      ],
+    },
+    {
+      id: 5,
       category: "exposure",
       question:
         "Have you had unprotected sex with a new partner since your last chlamydia test? (Most chlamydia carriers have no symptoms and don't know they're infected.)",
@@ -64,7 +76,19 @@ export const chlamydia: AssessmentConfig = {
       ],
     },
     {
-      id: 5,
+      id: 6,
+      category: "exposure",
+      question: "How many sexual partners have you had in the past 6 months?",
+      type: "single",
+      options: [
+        { label: "4 or more", points: 3 },
+        { label: "2–3", points: 2 },
+        { label: "1", points: 1 },
+        { label: "None", points: 0 },
+      ],
+    },
+    {
+      id: 7,
       category: "exposure",
       question:
         "What types of sexual contact have you had recently without a condom? Select all that apply.",
@@ -77,7 +101,7 @@ export const chlamydia: AssessmentConfig = {
       ],
     },
     {
-      id: 6,
+      id: 8,
       category: "exposure",
       question:
         "Has a sexual partner been diagnosed with chlamydia or another STI, or have you been notified of an exposure?",
@@ -90,7 +114,7 @@ export const chlamydia: AssessmentConfig = {
       ],
     },
     {
-      id: 7,
+      id: 9,
       category: "symptoms",
       question: "Have you noticed any unusual genital discharge?",
       type: "single",
@@ -102,13 +126,13 @@ export const chlamydia: AssessmentConfig = {
       ],
     },
     {
-      id: 8,
+      id: 10,
       category: "symptoms",
       question:
         "Have you experienced any of the following urogenital symptoms? Select all that apply.",
       type: "multi",
       options: [
-        { label: "Pain or burning during urination", points: 4 },
+        { label: "Pain or burning during urination", points: 3 },
         { label: "Pain during sexual intercourse", points: 3 },
         { label: "Lower abdominal or pelvic pain", points: 3 },
         { label: "Bleeding between periods or after sex (if applicable)", points: 2 },
@@ -116,7 +140,7 @@ export const chlamydia: AssessmentConfig = {
       ],
     },
     {
-      id: 9,
+      id: 11,
       category: "symptoms",
       question:
         "Have you noticed symptoms in any of these other areas? Select all that apply.",
@@ -124,13 +148,12 @@ export const chlamydia: AssessmentConfig = {
       options: [
         { label: "Testicular pain or swelling", points: 3 },
         { label: "Rectal pain, discharge, or bleeding", points: 3 },
-        { label: "Sore throat that developed after oral sexual contact", points: 1 },
         { label: "Eye redness, pain, or discharge", points: 2 },
         { label: "None of these", points: 0 },
       ],
     },
     {
-      id: 10,
+      id: 12,
       category: "symptoms",
       question:
         "When did your symptoms begin relative to a possible exposure? (Chlamydia symptoms typically appear 7–21 days after contact, if they appear at all.)",

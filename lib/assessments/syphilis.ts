@@ -7,10 +7,10 @@ export const syphilis: AssessmentConfig = {
   headline: "Do I Have Syphilis?",
   subtitle: "Free, Private Symptom & Risk Assessment",
   description:
-    "Answer 10 simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
+    "Answer a few simple questions about your symptoms and risk factors. Get personalized guidance in under 3 minutes.",
   metaTitle: "Do I Have Syphilis? | Free Anonymous Risk Assessment — EasySTD",
   metaDescription:
-    "Take our free, anonymous syphilis risk assessment. Answer 10 questions in under 3 minutes. Get personalized guidance and testing recommendations.",
+    "Take our free, anonymous syphilis risk assessment. Answer questions in under 3 minutes. Get personalized guidance and testing recommendations.",
   affiliateUrl: "https://www.stdcheck.com/syphilis-test.php",
   learnMoreUrl: "https://easystd.com/syphilis",
   questions: [
@@ -52,6 +52,18 @@ export const syphilis: AssessmentConfig = {
     },
     {
       id: 4,
+      category: "context",
+      question: "Are you currently pregnant or planning a pregnancy?",
+      type: "single",
+      options: [
+        { label: "Yes, currently pregnant", points: 3 },
+        { label: "Yes, planning a pregnancy", points: 2 },
+        { label: "No", points: 0 },
+        { label: "Not applicable", points: 0 },
+      ],
+    },
+    {
+      id: 5,
       category: "exposure",
       question:
         "Which types of intimate contact have you had recently? Select all that apply.",
@@ -60,12 +72,12 @@ export const syphilis: AssessmentConfig = {
         { label: "Oral sex (giving or receiving) with a new or casual partner", points: 3 },
         { label: "Condomless vaginal or anal sex", points: 3 },
         { label: "Direct contact with a sore, rash, or lesion on a partner's genitals, anus, or mouth", points: 4 },
-        { label: "Sex with multiple partners in the past 6 months", points: 2 },
+        { label: "Kissing or intimate oral contact with someone who had visible mouth sores", points: 2 },
         { label: "None of these", points: 0 },
       ],
     },
     {
-      id: 5,
+      id: 6,
       category: "exposure",
       question:
         "Which of the following apply to your recent sexual activity? Select all that apply.",
@@ -79,7 +91,7 @@ export const syphilis: AssessmentConfig = {
       ],
     },
     {
-      id: 6,
+      id: 7,
       category: "exposure",
       question:
         "Has a sexual partner been diagnosed with syphilis, or have you been notified of a syphilis exposure by a partner or health department?",
@@ -91,7 +103,20 @@ export const syphilis: AssessmentConfig = {
       ],
     },
     {
-      id: 7,
+      id: 8,
+      category: "exposure",
+      question:
+        "Do you have HIV, or have you been diagnosed with another STI in the past 12 months?",
+      type: "single",
+      options: [
+        { label: "Yes, I am living with HIV", points: 4 },
+        { label: "Yes, I was diagnosed with another STI recently", points: 3 },
+        { label: "No", points: 0 },
+        { label: "I don't know my HIV status", points: 2 },
+      ],
+    },
+    {
+      id: 9,
       category: "symptoms",
       question:
         "Have you noticed a firm, round, usually painless sore or ulcer on or around your genitals, anus, or mouth?",
@@ -104,7 +129,7 @@ export const syphilis: AssessmentConfig = {
       ],
     },
     {
-      id: 8,
+      id: 10,
       category: "symptoms",
       question:
         "Have you noticed any of these skin or body changes? Select all that apply.",
@@ -118,20 +143,21 @@ export const syphilis: AssessmentConfig = {
       ],
     },
     {
-      id: 9,
-      category: "exposure",
+      id: 11,
+      category: "symptoms",
       question:
-        "Do you have HIV, or have you been diagnosed with another STI in the past 12 months?",
-      type: "single",
+        "Have you experienced any of these neurological symptoms? Select all that apply.",
+      type: "multi",
       options: [
-        { label: "Yes, I am living with HIV", points: 4 },
-        { label: "Yes, I was diagnosed with another STI recently", points: 3 },
-        { label: "No", points: 0 },
-        { label: "I don't know my HIV status", points: 2 },
+        { label: "Vision changes or eye pain", points: 3 },
+        { label: "Hearing loss or ringing in the ears", points: 3 },
+        { label: "Persistent headaches or confusion", points: 2 },
+        { label: "Numbness or difficulty with coordination", points: 2 },
+        { label: "None of these", points: 0 },
       ],
     },
     {
-      id: 10,
+      id: 12,
       category: "symptoms",
       question:
         "When did your symptoms first appear, and have they changed over time?",
