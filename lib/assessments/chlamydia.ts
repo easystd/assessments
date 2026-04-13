@@ -17,13 +17,14 @@ export const chlamydia: AssessmentConfig = {
     {
       id: 1,
       category: "context",
-      question: "What is your age range?",
+      question: "What is your age and sex?",
       type: "single",
       options: [
-        { label: "Under 25", points: 3 },
-        { label: "25–29", points: 2 },
-        { label: "30–39", points: 1 },
-        { label: "40 or older", points: 1 },
+        { label: "Woman under 25", points: 4 },
+        { label: "Woman aged 25 or older", points: 2 },
+        { label: "Man who has sex with men (any age)", points: 3 },
+        { label: "Man under 25", points: 3 },
+        { label: "Man aged 25 or older", points: 1 },
       ],
     },
     {
