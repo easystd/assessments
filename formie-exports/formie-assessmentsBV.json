@@ -1,0 +1,687 @@
+{
+    "handle": "assessmentsBV",
+    "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
+    "submitActionEntryId": null,
+    "submitActionEntrySiteId": null,
+    "defaultStatusId": 1,
+    "dataRetention": "forever",
+    "dataRetentionValue": null,
+    "userDeletedAction": "retain",
+    "fileUploadsAction": "retain",
+    "title": "Assessments - Bacterial Vaginosis (BV)",
+    "notifications": [],
+    "pages": [
+        {
+            "label": "Page 1",
+            "settings": {
+                "submitButtonLabel": "Submit",
+                "backButtonLabel": "Back",
+                "showBackButton": false,
+                "saveButtonLabel": "Save",
+                "showSaveButton": false,
+                "saveButtonStyle": "link",
+                "buttonsPosition": "left",
+                "cssClasses": null,
+                "containerAttributes": null,
+                "inputAttributes": null,
+                "enableNextButtonConditions": false,
+                "nextButtonConditions": [],
+                "enablePageConditions": false,
+                "pageConditions": [],
+                "enableJsEvents": false,
+                "jsGtmEventOptions": []
+            },
+            "rows": [
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you had bacterial vaginosis before?",
+                                "handle": "haveYouHadBacterialVaginosisBefore",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, within the past year",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, more than a year ago",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Are you currently pregnant?",
+                                "handle": "areYouCurrentlyPregnant",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "b_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Possibly",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Not applicable",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Do you use any of the following? Select all that apply.",
+                                "handle": "doYouUseAnyOfTheFollowingSelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Vaginal douches or internal washes",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Scented soaps, sprays, or wipes in the vaginal area",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Bubble bath or scented bath products",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these — I use only water or unscented products",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you had a new sexual partner recently, or multiple partners in the past 12 months?",
+                                "handle": "haveYouHadANewSexualPartnerRecentlyOrMultiplePartnersInThePast12Months",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, a new partner in the past few months",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, multiple partners in the past year",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No, same partner or no partners",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Prefer not to say",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Do you have a female sexual partner?",
+                                "handle": "doYouHaveAFemaleSexualPartner",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "b_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Prefer not to say",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you recently taken antibiotics for any reason?",
+                                "handle": "haveYouRecentlyTakenAntibioticsForAnyReason",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, within the past month",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, within the past 3 months",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Do you currently have an IUD (intrauterine device)?",
+                                "handle": "doYouCurrentlyHaveAnIud",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "b_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you noticed any unusual vaginal discharge?",
+                                "handle": "haveYouNoticedAnyUnusualVaginalDischarge",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, thin grayish-white or milky discharge",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, discharge that looks or feels different than usual",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No change in discharge",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you noticed a vaginal odor?",
+                                "handle": "haveYouNoticedAVaginalOdor",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, a fishy smell — especially noticeable after sex or during menstruation",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, a mild or different-than-usual odor",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No unusual odor",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "How does your discharge compare to typical yeast infection symptoms?",
+                                "handle": "howDoesYourDischargeCompareToTypicalYeastInfectionSymptoms",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "My discharge is thin and watery — NOT thick or cottage cheese-like",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "My discharge is thick, white, and clumpy (more like a yeast infection)",
+                                        "value": "b_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I'm not sure how to describe it",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I don't have unusual discharge",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Do your symptoms seem to worsen during or just after your menstrual period?",
+                                "handle": "doYourSymptomsSeemToWorsenDuringOrJustAfterYourMenstrualPeriod",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, noticeably worse during or after my period",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Possibly, I'm not sure",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Not applicable (no periods)",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "When did these symptoms start, and do they recur?",
+                                "handle": "whenDidTheseSymptomsStartAndDoTheyRecur",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "They started recently and this is my first episode",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "They started recently, but I've had BV before",
+                                        "value": "b_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "They come and go repeatedly over months",
+                                        "value": "c_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I haven't had any symptoms",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "e_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "exportVersion": "v3"
+}

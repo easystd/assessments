@@ -1,0 +1,732 @@
+{
+    "handle": "assessmentsHPV",
+    "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
+    "submitActionEntryId": null,
+    "submitActionEntrySiteId": null,
+    "defaultStatusId": 1,
+    "dataRetention": "forever",
+    "dataRetentionValue": null,
+    "userDeletedAction": "retain",
+    "fileUploadsAction": "retain",
+    "title": "Assessments - Human Papillomavirus (HPV)",
+    "notifications": [],
+    "pages": [
+        {
+            "label": "Page 1",
+            "settings": {
+                "submitButtonLabel": "Submit",
+                "backButtonLabel": "Back",
+                "showBackButton": false,
+                "saveButtonLabel": "Save",
+                "showSaveButton": false,
+                "saveButtonStyle": "link",
+                "buttonsPosition": "left",
+                "cssClasses": null,
+                "containerAttributes": null,
+                "inputAttributes": null,
+                "enableNextButtonConditions": false,
+                "nextButtonConditions": [],
+                "enablePageConditions": false,
+                "pageConditions": [],
+                "enableJsEvents": false,
+                "jsGtmEventOptions": []
+            },
+            "rows": [
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "What is your sex or gender?",
+                                "handle": "whatIsYourSexOrGender",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Man who has sex with men (MSM)",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Man who has sex with women only",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Woman",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Prefer not to say",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you been vaccinated against HPV (Gardasil)?",
+                                "handle": "haveYouBeenVaccinatedAgainstHpv",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, fully vaccinated (all doses)",
+                                        "value": "a_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, but only some doses",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you ever had an abnormal Pap smear, HPV test, or cervical/anal screening result?",
+                                "handle": "haveYouEverHadAnAbnormalPapSmearHpvTestOrCervicalanalScreeningResult",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, abnormal results within the past 2 years",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, but more than 2 years ago and follow-ups were normal",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No or not applicable",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I have never been screened",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "At what age did you first become sexually active? (Earlier sexual debut increases cumulative HPV exposure.)",
+                                "handle": "atWhatAgeDidYouFirstBecomeSexuallyActive",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Under 16",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "16–18",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "19 or older",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Not yet sexually active",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "How many lifetime sexual partners have you had?",
+                                "handle": "howManyLifetimeSexualPartnersHaveYouHad",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "10 or more",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "4–9",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "1–3",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "What types of sexual contact have you had? Select all that apply.",
+                                "handle": "whatTypesOfSexualContactHaveYouHadSelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Vaginal intercourse",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Anal intercourse",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Oral sex",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Genital-to-genital skin contact without penetration",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of the above",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "How consistently do you use condoms? (Note: condoms reduce HPV risk but do not fully prevent it, since HPV spreads via skin-to-skin contact.)",
+                                "handle": "howConsistentlyDoYouUseCondoms",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Always",
+                                        "value": "a_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Most of the time",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Sometimes",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Rarely or never",
+                                        "value": "d_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Not applicable",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Do any of these HPV risk-amplifying factors apply to you? Select all that apply.",
+                                "handle": "doAnyOfTheseHpvRiskamplifyingFactorsApplyToYouSelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "A sexual partner has HPV or genital warts",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Weakened immune system (HIV, transplant medication, autoimmune treatment)",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I am a current smoker",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you noticed any warts or unusual growths on or around your genitals, anus, or mouth?",
+                                "handle": "haveYouNoticedAnyWartsOrUnusualGrowthsOnOrAroundYourGenitalsAnusOrMout",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, small flesh-colored or grayish soft bumps",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, clustered or cauliflower-like growths",
+                                        "value": "b_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you experienced any of the following genital or cervical symptoms? Select all that apply.",
+                                "handle": "haveYouExperiencedAnyOfTheFollowingGenitalOrCervicalSymptomsSelectAllT",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Itching, burning, or discomfort around warts or genital area",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Bleeding during or after intercourse",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Changes in a mole or lesion in the genital area",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unusual vaginal or anal discharge",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you noticed any of these oral or throat symptoms? (These may indicate a condition requiring immediate medical evaluation.) Select all that apply.",
+                                "handle": "haveYouNoticedAnyOfTheseOralOrThroatSymptomsSelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Persistent sore throat or hoarseness lasting weeks",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Difficulty swallowing or a lump in the throat",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Warts or unusual growths in the mouth or on the tongue",
+                                        "value": "c_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Persistent ear pain on one side",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "When did you first notice these symptoms or changes?",
+                                "handle": "whenDidYouFirstNoticeTheseSymptomsOrChanges",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Within the past few weeks",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Within the past few months",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "More than 6 months ago",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I haven't had any symptoms",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "e_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "exportVersion": "v3"
+}

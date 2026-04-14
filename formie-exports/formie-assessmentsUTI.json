@@ -1,0 +1,673 @@
+{
+    "handle": "assessmentsUTI",
+    "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
+    "submitActionEntryId": null,
+    "submitActionEntrySiteId": null,
+    "defaultStatusId": 1,
+    "dataRetention": "forever",
+    "dataRetentionValue": null,
+    "userDeletedAction": "retain",
+    "fileUploadsAction": "retain",
+    "title": "Assessments - Urinary Tract Infection (UTI)",
+    "notifications": [],
+    "pages": [
+        {
+            "label": "Page 1",
+            "settings": {
+                "submitButtonLabel": "Submit",
+                "backButtonLabel": "Back",
+                "showBackButton": false,
+                "saveButtonLabel": "Save",
+                "showSaveButton": false,
+                "saveButtonStyle": "link",
+                "buttonsPosition": "left",
+                "cssClasses": null,
+                "containerAttributes": null,
+                "inputAttributes": null,
+                "enableNextButtonConditions": false,
+                "nextButtonConditions": [],
+                "enablePageConditions": false,
+                "pageConditions": [],
+                "enableJsEvents": false,
+                "jsGtmEventOptions": []
+            },
+            "rows": [
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "What is your biological sex?",
+                                "handle": "whatIsYourBiologicalSex",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Female",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Male",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Prefer not to say",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you had a UTI before?",
+                                "handle": "haveYouHadAUtiBefore",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, 3 or more times in the past year (recurrent UTIs)",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, 1–2 times in the past year",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, but more than a year ago",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No or unsure",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Do any of these sexual activity risk factors apply? Select all that apply.",
+                                "handle": "doAnyOfTheseSexualActivityRiskFactorsApplySelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Sexually active (intercourse within the past 2 weeks)",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "New sexual partner recently",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Use spermicide or a diaphragm",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these or not applicable",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Do any of these medical conditions apply to you? Select all that apply.",
+                                "handle": "doAnyOfTheseMedicalConditionsApplyToYouSelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Diabetes",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Currently pregnant",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Post-menopausal",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Currently using a urinary catheter",
+                                        "value": "d_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Do any of these habits or factors apply? Select all that apply.",
+                                "handle": "doAnyOfTheseHabitsOrFactorsApplySelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "I frequently hold my urine for long periods",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I drink less than 4 glasses of water a day",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I wipe back-to-front after using the toilet",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I don't urinate after sexual intercourse",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you recently taken antibiotics for any reason?",
+                                "handle": "haveYouRecentlyTakenAntibioticsForAnyReason",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, I recently finished a course of antibiotics",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, I am currently on antibiotics for something else",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Did your symptoms begin within 24–48 hours after sexual intercourse?",
+                                "handle": "didYourSymptomsBeginWithin2448HoursAfterSexualIntercourse",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No or unsure",
+                                        "value": "b_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I haven't been sexually active recently",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Are you experiencing a strong, persistent urge to urinate?",
+                                "handle": "areYouExperiencingAStrongPersistentUrgeToUrinate",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, constantly — even right after using the bathroom",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, noticeably more often than usual",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No change in urgency or frequency",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you experienced any of these lower urinary tract symptoms? Select all that apply.",
+                                "handle": "haveYouExperiencedAnyOfTheseLowerUrinaryTractSymptomsSelectAllThatAppl",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Burning or stinging pain during urination",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Pressure or discomfort in the lower abdomen or pelvis",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Cloudy, dark, or strong-smelling urine",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Blood in urine (pink, red, or cola-colored)",
+                                        "value": "d_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you noticed any of these signs that may suggest the infection has spread to your kidneys? Select all that apply.",
+                                "handle": "haveYouNoticedAnyOfTheseSignsThatMaySuggestTheInfectionHasSpreadToYour",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Pain in your lower back, side, or flank (below the ribs)",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Fever (100.4°F / 38°C or higher) or chills",
+                                        "value": "b_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Nausea or vomiting",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Feeling generally unwell or shaky beyond just urinary discomfort",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "When did these urinary symptoms begin?",
+                                "handle": "whenDidTheseUrinarySymptomsBegin",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Within the past 1–2 days (sudden onset)",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Within the past week",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "They have been ongoing or worsening for more than a week",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I haven't had any symptoms",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "e_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "exportVersion": "v3"
+}

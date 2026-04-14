@@ -1,0 +1,658 @@
+{
+    "handle": "assessmentsGonorrhea",
+    "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
+    "submitActionEntryId": null,
+    "submitActionEntrySiteId": null,
+    "defaultStatusId": 1,
+    "dataRetention": "forever",
+    "dataRetentionValue": null,
+    "userDeletedAction": "retain",
+    "fileUploadsAction": "retain",
+    "title": "Assessments - Gonorrhea",
+    "notifications": [],
+    "pages": [
+        {
+            "label": "Page 1",
+            "settings": {
+                "submitButtonLabel": "Submit",
+                "backButtonLabel": "Back",
+                "showBackButton": false,
+                "saveButtonLabel": "Save",
+                "showSaveButton": false,
+                "saveButtonStyle": "link",
+                "buttonsPosition": "left",
+                "cssClasses": null,
+                "containerAttributes": null,
+                "inputAttributes": null,
+                "enableNextButtonConditions": false,
+                "nextButtonConditions": [],
+                "enablePageConditions": false,
+                "pageConditions": [],
+                "enableJsEvents": false,
+                "jsGtmEventOptions": []
+            },
+            "rows": [
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "What is your sex or gender?",
+                                "handle": "whatIsYourSexOrGender",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Man who has sex with men (MSM)",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Man who has sex with women only",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Woman",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Prefer not to say",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "What is your age range?",
+                                "handle": "whatIsYourAgeRange",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "15–24",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "25–29",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "30–39",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "40 or older",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you been diagnosed with gonorrhea, chlamydia, or another STI before?",
+                                "handle": "haveYouBeenDiagnosedWithGonorrheaChlamydiaOrAnotherStiBefore",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, gonorrhea specifically",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, a different STI (chlamydia, syphilis, etc.)",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you had a new or casual sexual partner in the past 30 days?",
+                                "handle": "haveYouHadANewOrCasualSexualPartnerInThePast30Days",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, multiple new partners",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, one new partner",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No, same partner(s) only",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I have not been sexually active",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Which types of recent sexual contact apply to you? Select all that apply.",
+                                "handle": "whichTypesOfRecentSexualContactApplyToYouSelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Vaginal intercourse without a condom",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Anal intercourse without a condom",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Giving oral sex without protection",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Receiving oral sex from a partner",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of the above",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Has a sexual partner been diagnosed with gonorrhea, or have you been notified of a gonorrhea exposure?",
+                                "handle": "hasASexualPartnerBeenDiagnosedWithGonorrheaOrHaveYouBeenNotifiedOfAGon",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "b_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you noticed any unusual genital discharge?",
+                                "handle": "haveYouNoticedAnyUnusualGenitalDischarge",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, thick yellowish or greenish discharge",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, white or cloudy discharge",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you experienced any of the following urogenital symptoms? Select all that apply.",
+                                "handle": "haveYouExperiencedAnyOfTheFollowingUrogenitalSymptomsSelectAllThatAppl",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Burning or pain during urination",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Increased frequency of urination",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Testicular pain or swelling",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Lower abdominal or pelvic pain",
+                                        "value": "d_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you noticed symptoms at any of these other body sites? Select all that apply.",
+                                "handle": "haveYouNoticedSymptomsAtAnyOfTheseOtherBodySitesSelectAllThatApply",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Persistent sore throat after oral sexual contact",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Rectal pain, itching, discharge, or bleeding",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Eye redness, pain, or pus-like discharge",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Bleeding between periods or after sex (if applicable)",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you experienced any joint pain, swelling, or skin lesions (small pus-filled spots) that appeared around the same time as other symptoms?",
+                                "handle": "haveYouExperiencedAnyJointPainSwellingOrSkinLesionsThatAppearedAroundT",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, joint pain or swelling along with skin lesions",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, joint pain or swelling only",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "When did your symptoms first appear after your most recent sexual contact?",
+                                "handle": "whenDidYourSymptomsFirstAppearAfterYourMostRecentSexualContact",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Within 1–14 days",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "More than 2 weeks later",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I'm not sure of the timing",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I have not had any symptoms",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "exportVersion": "v3"
+}
