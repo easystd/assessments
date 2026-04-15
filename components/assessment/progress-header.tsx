@@ -1,6 +1,6 @@
 "use client";
 
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "@easystd/ui-shared";
 
 interface ProgressHeaderProps {
   current: number;

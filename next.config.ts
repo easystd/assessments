@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: { unoptimized: true },
   trailingSlash: true,
+  transpilePackages: ["@easystd/ui-shared"],
 };
 
 export default nextConfig;

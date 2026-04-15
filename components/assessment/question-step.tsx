@@ -1,14 +1,7 @@
 "use client";
 
 import { type Question } from "@/lib/assessments/types";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { RadioGroup, RadioGroupItem, Checkbox, Card, CardContent, CardHeader, CardTitle } from "@easystd/ui-shared";
 
 interface QuestionStepProps {
   question: Question;

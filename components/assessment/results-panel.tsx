@@ -1,17 +1,18 @@
 "use client";
 
 import { type RiskResult } from "@/lib/scoring";
-import { Button } from "@/components/ui/button";
 import {
+  Button,
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+  Alert,
+  AlertDescription,
+  Badge,
+  Separator,
+} from "@easystd/ui-shared";
 import {
   ShieldCheck,
   AlertTriangle,
