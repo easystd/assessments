@@ -1,5 +1,5 @@
 {
-    "handle": "assessmentsHIV",
+    "handle": "assessmentsHepA",
     "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
     "submitActionEntryId": null,
     "submitActionEntrySiteId": null,
@@ -8,7 +8,7 @@
     "dataRetentionValue": null,
     "userDeletedAction": "retain",
     "fileUploadsAction": "retain",
-    "title": "Assessments - HIV",
+    "title": "Assessments - Hepatitis A",
     "notifications": [],
     "pages": [
         {
@@ -37,8 +37,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "What is your sex or gender?",
-                                "handle": "hiv_1",
+                                "label": "Have you been vaccinated against hepatitis A? (Two doses provide long-term protection.)",
+                                "handle": "hepA_1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -61,28 +61,23 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Man who has sex with men (MSM)",
-                                        "value": "a_3",
+                                        "label": "Yes, fully vaccinated (both doses)",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Transgender woman",
-                                        "value": "b_3",
+                                        "label": "Yes, but only one dose",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Man who has sex with women only",
-                                        "value": "c_1",
+                                        "label": "No",
+                                        "value": "c_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Woman",
-                                        "value": "d_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Prefer not to say",
-                                        "value": "e_1",
+                                        "label": "Unsure",
+                                        "value": "d_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -96,8 +91,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Are you currently pregnant or planning a pregnancy?",
-                                "handle": "hiv_2",
+                                "label": "Have you ever been diagnosed with hepatitis A before?",
+                                "handle": "hepA_2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -114,36 +109,176 @@
                                 "inputAttributes": [],
                                 "includeInEmail": false,
                                 "emailValue": "label",
-                                "enableConditions": true,
-                                "conditions": {
-                                    "showRule": "show",
-                                    "conditionRule": "any",
-                                    "conditions": [
-                                        {
-                                            "id": "new4324-3082",
-                                            "field": "{field:hiv_1}",
-                                            "condition": "=",
-                                            "value": "d_1"
-                                        },
-                                        {
-                                            "id": "new2119-3054",
-                                            "field": "{field:hiv_1}",
-                                            "condition": "=",
-                                            "value": "e_1"
-                                        }
-                                    ]
-                                },
+                                "enableConditions": false,
+                                "conditions": null,
                                 "enableContentEncryption": false,
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Yes, currently pregnant",
-                                        "value": "a_2",
+                                        "label": "Yes — once you recover, you have lifelong immunity",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Yes, planning a pregnancy",
+                                        "label": "No",
                                         "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Do you have any of the following conditions? Select all that apply.",
+                                "handle": "hepA_3",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Chronic liver disease (hepatitis B, hepatitis C, cirrhosis)",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "HIV or weakened immune system",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Currently pregnant",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of the above",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you traveled to or lived in a region with high hepatitis A rates in the past 2 months? (Central/South America, Africa, Asia, Eastern Europe, the Middle East.)",
+                                "handle": "hepA_4",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, within the past 2 weeks",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, within the past 2 months",
+                                        "value": "b_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you had close contact with someone diagnosed with hepatitis A? (Household member, sexual partner, caregiver.)",
+                                "handle": "hepA_5",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, within the past 2 weeks",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, within the past 2 months",
+                                        "value": "b_4",
                                         "isDefault": false
                                     },
                                     {
@@ -152,127 +287,9 @@
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Not applicable",
-                                        "value": "d_0",
-                                        "isDefault": false
-                                    }
-                                ],
-                                "multi": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Radio",
-                            "settings": {
-                                "label": "When were you last tested for HIV?",
-                                "handle": "hiv_3",
-                                "instructions": null,
-                                "required": true,
-                                "layout": "vertical",
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Within the past 6 months",
-                                        "value": "a_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "6–12 months ago",
-                                        "value": "b_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "More than 1 year ago",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I have never been tested",
-                                        "value": "d_3",
-                                        "isDefault": false
-                                    },
-                                    {
                                         "label": "Unsure",
-                                        "value": "e_2",
-                                        "isDefault": false
-                                    }
-                                ],
-                                "multi": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Radio",
-                            "settings": {
-                                "label": "Are you currently taking PrEP (pre-exposure prophylaxis) or PEP (post-exposure prophylaxis)?",
-                                "handle": "hiv_4",
-                                "instructions": null,
-                                "required": true,
-                                "layout": "vertical",
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Yes, I take PrEP consistently",
-                                        "value": "a_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Yes, but I sometimes miss doses",
-                                        "value": "b_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I recently started PEP after an exposure",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "No",
                                         "value": "d_2",
                                         "isDefault": false
-                                    },
-                                    {
-                                        "label": "I'm not sure what PrEP/PEP is",
-                                        "value": "e_1",
-                                        "isDefault": false
                                     }
                                 ],
                                 "multi": false
@@ -285,8 +302,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
-                                "label": "Which of these high-risk exposures apply to you? Select all that apply.",
-                                "handle": "hiv_5",
+                                "label": "Which of the following risk factors apply to you? Select all that apply.",
+                                "handle": "hepA_6",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -315,92 +332,33 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Shared needles, syringes, or injection equipment",
-                                        "value": "a_5",
+                                        "label": "Oral-anal sexual contact (rimming)",
+                                        "value": "a_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Sexual contact with someone living with HIV (not virally suppressed)",
-                                        "value": "b_5",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Occupational exposure (needlestick, blood splash)",
-                                        "value": "c_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Blood transfusion or medical procedure in a country with limited screening",
-                                        "value": "d_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "What types of sexual contact have you had recently without a condom? Select all that apply.",
-                                "handle": "hiv_6",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Receptive anal intercourse",
-                                        "value": "a_4",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Insertive anal intercourse",
+                                        "label": "Men who have sex with men (MSM)",
                                         "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Vaginal intercourse",
-                                        "value": "c_2",
+                                        "label": "Use of injection or non-injection recreational drugs",
+                                        "value": "c_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Oral sex",
-                                        "value": "d_1",
+                                        "label": "Experiencing homelessness or living in a shelter",
+                                        "value": "d_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "All contact was protected or none applies",
-                                        "value": "e_0",
+                                        "label": "Working with or caring for someone with hepatitis A",
+                                        "value": "e_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of the above",
+                                        "value": "f_0",
                                         "isDefault": false
                                     }
                                 ]
@@ -413,8 +371,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Have you been diagnosed with another STI (syphilis, gonorrhea, chlamydia, herpes) in the past 12 months?",
-                                "handle": "hiv_7",
+                                "label": "Have you eaten raw or undercooked shellfish, or food/water you suspect was contaminated, in the past 2 months? (Hepatitis A spreads through contaminated food and water.)",
+                                "handle": "hepA_7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -442,13 +400,13 @@
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "No",
-                                        "value": "b_0",
+                                        "label": "Possibly",
+                                        "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Unsure",
-                                        "value": "c_1",
+                                        "label": "No",
+                                        "value": "c_0",
                                         "isDefault": false
                                     }
                                 ],
@@ -460,74 +418,10 @@
                 {
                     "fields": [
                         {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "Do any of these additional risk contexts apply? Select all that apply.",
-                                "handle": "hiv_8",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Sex with multiple or anonymous partners",
-                                        "value": "a_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Sex work (exchanging sex for money, drugs, or housing)",
-                                        "value": "b_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Sex while under the influence of drugs (especially methamphetamine or poppers)",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Living in or traveling to a region with high HIV prevalence",
-                                        "value": "d_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Within 2–4 weeks after a potential exposure, did you experience a flu-like illness?",
-                                "handle": "hiv_9",
+                                "label": "Have you noticed a yellowing of your skin or the whites of your eyes (jaundice)?",
+                                "handle": "hepA_8",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -550,12 +444,12 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Yes — fever, sore throat, rash, and swollen lymph nodes together",
+                                        "label": "Yes, noticeable yellowing",
                                         "value": "a_5",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Yes — some flu-like symptoms (fever, body aches)",
+                                        "label": "Yes, very slight or I'm not sure",
                                         "value": "b_3",
                                         "isDefault": false
                                     },
@@ -563,11 +457,6 @@
                                         "label": "No",
                                         "value": "c_0",
                                         "isDefault": false
-                                    },
-                                    {
-                                        "label": "Unsure",
-                                        "value": "d_1",
-                                        "isDefault": false
                                     }
                                 ],
                                 "multi": false
@@ -580,8 +469,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
-                                "label": "Have you experienced any of these persistent symptoms lasting weeks or longer? Select all that apply.",
-                                "handle": "hiv_10",
+                                "label": "Have you experienced any of the following digestive symptoms? Select all that apply.",
+                                "handle": "hepA_9",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -610,86 +499,22 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Unexplained weight loss (more than 10 lbs)",
-                                        "value": "a_4",
+                                        "label": "Nausea or vomiting",
+                                        "value": "a_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Chronic diarrhea lasting more than a month",
-                                        "value": "b_3",
+                                        "label": "Loss of appetite",
+                                        "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Drenching night sweats",
+                                        "label": "Abdominal pain, especially in the upper right side",
                                         "value": "c_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Persistent fatigue not explained by other causes",
-                                        "value": "d_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "Have you noticed any of these signs that may suggest immune suppression? Select all that apply.",
-                                "handle": "hiv_11",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Recurrent or unusual infections (thrush, pneumonia, shingles at a young age)",
-                                        "value": "a_4",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "White patches or sores in the mouth that won't heal",
-                                        "value": "b_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Persistent swollen lymph nodes in multiple areas",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Skin rashes or lesions that are new or unusual",
+                                        "label": "Diarrhea",
                                         "value": "d_2",
                                         "isDefault": false
                                     },
@@ -708,8 +533,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "When did your symptoms first appear relative to a potential exposure?",
-                                "handle": "hiv_12",
+                                "label": "Have you noticed changes in your urine or stool color?",
+                                "handle": "hepA_10",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -732,28 +557,141 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "2–4 weeks after exposure (acute phase)",
+                                        "label": "Yes, dark urine (tea or cola colored)",
                                         "value": "a_4",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Months after exposure (symptoms developed gradually)",
-                                        "value": "b_3",
+                                        "label": "Yes, pale or clay-colored stool",
+                                        "value": "b_4",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "I have had these symptoms for a long time",
-                                        "value": "c_1",
+                                        "label": "Both dark urine and pale stool",
+                                        "value": "c_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No changes",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you experienced any of these general symptoms? Select all that apply.",
+                                "handle": "hepA_11",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Fatigue or feeling unusually tired",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Fever",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Joint pain or muscle aches",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Itchy skin",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "When did your symptoms begin? (Hepatitis A symptoms typically appear 2–6 weeks after exposure.)",
+                                "handle": "hepA_12",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Within the past 1–2 weeks",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "2–6 weeks ago",
+                                        "value": "b_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "More than 6 weeks ago",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I have not had any symptoms",
                                         "value": "d_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Unsure",
-                                        "value": "e_1",
                                         "isDefault": false
                                     }
                                 ],

@@ -1,5 +1,5 @@
 {
-    "handle": "assessmentsHIV",
+    "handle": "assessmentsMolluscum",
     "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
     "submitActionEntryId": null,
     "submitActionEntrySiteId": null,
@@ -8,7 +8,7 @@
     "dataRetentionValue": null,
     "userDeletedAction": "retain",
     "fileUploadsAction": "retain",
-    "title": "Assessments - HIV",
+    "title": "Assessments - Molluscum Contagiosum",
     "notifications": [],
     "pages": [
         {
@@ -37,8 +37,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "What is your sex or gender?",
-                                "handle": "hiv_1",
+                                "label": "What is your age range?",
+                                "handle": "molluscum_1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -61,349 +61,27 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Man who has sex with men (MSM)",
-                                        "value": "a_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Transgender woman",
-                                        "value": "b_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Man who has sex with women only",
-                                        "value": "c_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Woman",
-                                        "value": "d_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Prefer not to say",
-                                        "value": "e_1",
-                                        "isDefault": false
-                                    }
-                                ],
-                                "multi": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Radio",
-                            "settings": {
-                                "label": "Are you currently pregnant or planning a pregnancy?",
-                                "handle": "hiv_2",
-                                "instructions": null,
-                                "required": true,
-                                "layout": "vertical",
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": true,
-                                "conditions": {
-                                    "showRule": "show",
-                                    "conditionRule": "any",
-                                    "conditions": [
-                                        {
-                                            "id": "new4324-3082",
-                                            "field": "{field:hiv_1}",
-                                            "condition": "=",
-                                            "value": "d_1"
-                                        },
-                                        {
-                                            "id": "new2119-3054",
-                                            "field": "{field:hiv_1}",
-                                            "condition": "=",
-                                            "value": "e_1"
-                                        }
-                                    ]
-                                },
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Yes, currently pregnant",
+                                        "label": "Under 18",
                                         "value": "a_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Yes, planning a pregnancy",
-                                        "value": "b_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "No",
-                                        "value": "c_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Not applicable",
-                                        "value": "d_0",
-                                        "isDefault": false
-                                    }
-                                ],
-                                "multi": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Radio",
-                            "settings": {
-                                "label": "When were you last tested for HIV?",
-                                "handle": "hiv_3",
-                                "instructions": null,
-                                "required": true,
-                                "layout": "vertical",
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Within the past 6 months",
-                                        "value": "a_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "6–12 months ago",
-                                        "value": "b_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "More than 1 year ago",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I have never been tested",
-                                        "value": "d_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Unsure",
-                                        "value": "e_2",
-                                        "isDefault": false
-                                    }
-                                ],
-                                "multi": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Radio",
-                            "settings": {
-                                "label": "Are you currently taking PrEP (pre-exposure prophylaxis) or PEP (post-exposure prophylaxis)?",
-                                "handle": "hiv_4",
-                                "instructions": null,
-                                "required": true,
-                                "layout": "vertical",
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Yes, I take PrEP consistently",
-                                        "value": "a_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Yes, but I sometimes miss doses",
-                                        "value": "b_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I recently started PEP after an exposure",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "No",
-                                        "value": "d_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I'm not sure what PrEP/PEP is",
-                                        "value": "e_1",
-                                        "isDefault": false
-                                    }
-                                ],
-                                "multi": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "Which of these high-risk exposures apply to you? Select all that apply.",
-                                "handle": "hiv_5",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Shared needles, syringes, or injection equipment",
-                                        "value": "a_5",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Sexual contact with someone living with HIV (not virally suppressed)",
-                                        "value": "b_5",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Occupational exposure (needlestick, blood splash)",
-                                        "value": "c_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Blood transfusion or medical procedure in a country with limited screening",
-                                        "value": "d_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "What types of sexual contact have you had recently without a condom? Select all that apply.",
-                                "handle": "hiv_6",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Receptive anal intercourse",
-                                        "value": "a_4",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Insertive anal intercourse",
+                                        "label": "18–29",
                                         "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Vaginal intercourse",
-                                        "value": "c_2",
+                                        "label": "30–44",
+                                        "value": "c_1",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Oral sex",
+                                        "label": "45 or older",
                                         "value": "d_1",
                                         "isDefault": false
-                                    },
-                                    {
-                                        "label": "All contact was protected or none applies",
-                                        "value": "e_0",
-                                        "isDefault": false
                                     }
-                                ]
+                                ],
+                                "multi": false
                             }
                         }
                     ]
@@ -413,8 +91,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Have you been diagnosed with another STI (syphilis, gonorrhea, chlamydia, herpes) in the past 12 months?",
-                                "handle": "hiv_7",
+                                "label": "Do you have any conditions that affect your immune system? (HIV, organ transplant medications, chemotherapy, or other immunosuppressive therapy.)",
+                                "handle": "molluscum_2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -438,7 +116,7 @@
                                 "options": [
                                     {
                                         "label": "Yes",
-                                        "value": "a_3",
+                                        "value": "a_4",
                                         "isDefault": false
                                     },
                                     {
@@ -460,19 +138,13 @@
                 {
                     "fields": [
                         {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Do any of these additional risk contexts apply? Select all that apply.",
-                                "handle": "hiv_8",
+                                "label": "Do you have a history of eczema or atopic dermatitis? (Broken or inflamed skin makes it easier for the virus to enter.)",
+                                "handle": "molluscum_3",
                                 "instructions": null,
                                 "required": true,
-                                "multi": true,
                                 "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
                                 "enabled": true,
                                 "matchField": null,
                                 "placeholder": null,
@@ -492,31 +164,22 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Sex with multiple or anonymous partners",
+                                        "label": "Yes, active eczema",
                                         "value": "a_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Sex work (exchanging sex for money, drugs, or housing)",
-                                        "value": "b_3",
+                                        "label": "Yes, but it's well controlled",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Sex while under the influence of drugs (especially methamphetamine or poppers)",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Living in or traveling to a region with high HIV prevalence",
-                                        "value": "d_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
-                                        "value": "e_0",
+                                        "label": "No",
+                                        "value": "c_0",
                                         "isDefault": false
                                     }
-                                ]
+                                ],
+                                "multi": false
                             }
                         }
                     ]
@@ -526,8 +189,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Within 2–4 weeks after a potential exposure, did you experience a flu-like illness?",
-                                "handle": "hiv_9",
+                                "label": "Have you had skin-to-skin sexual contact with a new or casual partner in the past 2–3 months?",
+                                "handle": "molluscum_4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -550,12 +213,61 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Yes — fever, sore throat, rash, and swollen lymph nodes together",
+                                        "label": "Yes, multiple partners",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, one partner",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Has a sexual partner or close contact had molluscum contagiosum or unexplained bumps?",
+                                "handle": "molluscum_5",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, diagnosed with molluscum",
                                         "value": "a_5",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Yes — some flu-like symptoms (fever, body aches)",
+                                        "label": "Yes, they have unexplained bumps",
                                         "value": "b_3",
                                         "isDefault": false
                                     },
@@ -566,7 +278,7 @@
                                     },
                                     {
                                         "label": "Unsure",
-                                        "value": "d_1",
+                                        "value": "d_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -580,8 +292,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
-                                "label": "Have you experienced any of these persistent symptoms lasting weeks or longer? Select all that apply.",
-                                "handle": "hiv_10",
+                                "label": "Have you shared any of the following with others recently? Select all that apply.",
+                                "handle": "molluscum_6",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -610,91 +322,27 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Unexplained weight loss (more than 10 lbs)",
-                                        "value": "a_4",
+                                        "label": "Towels or washcloths",
+                                        "value": "a_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Chronic diarrhea lasting more than a month",
-                                        "value": "b_3",
+                                        "label": "Clothing or athletic gear",
+                                        "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Drenching night sweats",
+                                        "label": "Razors",
                                         "value": "c_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Persistent fatigue not explained by other causes",
+                                        "label": "Sports equipment or wrestling/contact sports mats",
                                         "value": "d_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "None of these",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "Have you noticed any of these signs that may suggest immune suppression? Select all that apply.",
-                                "handle": "hiv_11",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Recurrent or unusual infections (thrush, pneumonia, shingles at a young age)",
-                                        "value": "a_4",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "White patches or sores in the mouth that won't heal",
-                                        "value": "b_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Persistent swollen lymph nodes in multiple areas",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Skin rashes or lesions that are new or unusual",
-                                        "value": "d_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
+                                        "label": "None of the above",
                                         "value": "e_0",
                                         "isDefault": false
                                     }
@@ -708,8 +356,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "When did your symptoms first appear relative to a potential exposure?",
-                                "handle": "hiv_12",
+                                "label": "Have you shaved or waxed the genital area, thighs, or lower abdomen recently? (Micro-abrasions from shaving can facilitate spread.)",
+                                "handle": "molluscum_7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -732,28 +380,313 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "2–4 weeks after exposure (acute phase)",
-                                        "value": "a_4",
+                                        "label": "Yes, regularly",
+                                        "value": "a_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Months after exposure (symptoms developed gradually)",
+                                        "label": "Occasionally",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you noticed small, round, firm bumps on your skin?",
+                                "handle": "molluscum_8",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, with a visible dimple or pit in the center",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, smooth and dome-shaped but no dimple",
                                         "value": "b_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "I have had these symptoms for a long time",
-                                        "value": "c_1",
+                                        "label": "Yes, but they look different from that description",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "I have not had any symptoms",
+                                        "label": "No bumps",
                                         "value": "d_0",
                                         "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "How would you describe the bumps? Select all that apply.",
+                                "handle": "molluscum_9",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Flesh-colored, pearly, or slightly pink",
+                                        "value": "a_3",
+                                        "isDefault": false
                                     },
                                     {
-                                        "label": "Unsure",
-                                        "value": "e_1",
+                                        "label": "Small (2–5 mm), like a pinhead to a pencil eraser",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Painless",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Release a waxy or cheesy white substance when squeezed",
+                                        "value": "d_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these match",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Where are the bumps located? Select all that apply.",
+                                "handle": "molluscum_10",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Genitals or pubic area",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Inner thighs or groin",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Lower abdomen or buttocks",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Face, neck, arms, or trunk",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Not applicable — I haven't noticed bumps",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "How many bumps have you noticed, and have they been spreading?",
+                                "handle": "molluscum_11",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Many bumps (10+) and they've been spreading",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "A cluster of several bumps (3–10)",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Just one or two",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No bumps",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "How long have the bumps been present? (Molluscum bumps typically appear 2–6 weeks after contact and can persist for months.)",
+                                "handle": "molluscum_12",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Less than 2 weeks",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "2–6 weeks",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "1–3 months",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "More than 3 months",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I haven't noticed any bumps",
+                                        "value": "e_0",
                                         "isDefault": false
                                     }
                                 ],

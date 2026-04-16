@@ -174,13 +174,13 @@
                                     "conditionRule": "any",
                                     "conditions": [
                                         {
-                                            "id": "new1055-2516",
+                                            "id": "new1925-4566",
                                             "field": "{field:stdChecker_1}",
                                             "condition": "=",
                                             "value": "a_0"
                                         },
                                         {
-                                            "id": "new1024-8961",
+                                            "id": "new5382-4580",
                                             "field": "{field:stdChecker_1}",
                                             "condition": "=",
                                             "value": "e_4"

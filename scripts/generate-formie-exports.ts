@@ -19,6 +19,13 @@ import { pid } from "../lib/assessments/pid";
 import { bacterialVaginosis } from "../lib/assessments/bacterial-vaginosis";
 import { uti } from "../lib/assessments/uti";
 import { yeastInfection } from "../lib/assessments/yeast-infection";
+import { genitalWarts } from "../lib/assessments/genital-warts";
+import { trichomoniasis } from "../lib/assessments/trichomoniasis";
+import { hepatitisA } from "../lib/assessments/hepatitis-a";
+import { hepatitisB } from "../lib/assessments/hepatitis-b";
+import { molluscumContagiosum } from "../lib/assessments/molluscum-contagiosum";
+import { scabies } from "../lib/assessments/scabies";
+import { pubicLice } from "../lib/assessments/pubic-lice";
 import { symptomChecker } from "../lib/symptom-checker";
 
 import type { AssessmentConfig } from "../lib/assessments/types";
@@ -63,6 +70,13 @@ const CONDITION_PREFIX: Record<string, string> = {
   "BV": "bv",
   "UTI": "uti",
   "Yeast Infection": "yeast",
+  "Genital Warts": "genitalWarts",
+  "Trich": "trich",
+  "Hep A": "hepA",
+  "Hep B": "hepB",
+  "Molluscum": "molluscum",
+  "Scabies": "scabies",
+  "Pubic Lice": "pubicLice",
 };
 
 /** Generate unique field handle: {condition}_{number} */
@@ -353,10 +367,17 @@ const assessments: AssessmentConfig[] = [
   hiv,
   herpes,
   hpv,
+  genitalWarts,
   pid,
   bacterialVaginosis,
   uti,
   yeastInfection,
+  trichomoniasis,
+  hepatitisA,
+  hepatitisB,
+  molluscumContagiosum,
+  scabies,
+  pubicLice,
 ];
 
 for (const config of assessments) {

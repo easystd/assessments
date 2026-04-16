@@ -1,5 +1,5 @@
 {
-    "handle": "assessmentsHIV",
+    "handle": "assessmentsScabies",
     "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
     "submitActionEntryId": null,
     "submitActionEntrySiteId": null,
@@ -8,7 +8,7 @@
     "dataRetentionValue": null,
     "userDeletedAction": "retain",
     "fileUploadsAction": "retain",
-    "title": "Assessments - HIV",
+    "title": "Assessments - Scabies",
     "notifications": [],
     "pages": [
         {
@@ -35,13 +35,19 @@
                 {
                     "fields": [
                         {
-                            "type": "verbb\\formie\\fields\\Radio",
+                            "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
-                                "label": "What is your sex or gender?",
-                                "handle": "hiv_1",
+                                "label": "Do you have a weakened immune system or a skin condition? Select all that apply.",
+                                "handle": "scabies_1",
                                 "instructions": null,
                                 "required": true,
+                                "multi": true,
                                 "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
                                 "enabled": true,
                                 "matchField": null,
                                 "placeholder": null,
@@ -61,103 +67,26 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Man who has sex with men (MSM)",
+                                        "label": "HIV, organ transplant, or immunosuppressive therapy",
                                         "value": "a_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Transgender woman",
-                                        "value": "b_3",
+                                        "label": "Eczema or psoriasis",
+                                        "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Man who has sex with women only",
-                                        "value": "c_1",
+                                        "label": "Elderly or living in a nursing home or care facility",
+                                        "value": "c_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Woman",
-                                        "value": "d_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Prefer not to say",
-                                        "value": "e_1",
-                                        "isDefault": false
-                                    }
-                                ],
-                                "multi": false
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Radio",
-                            "settings": {
-                                "label": "Are you currently pregnant or planning a pregnancy?",
-                                "handle": "hiv_2",
-                                "instructions": null,
-                                "required": true,
-                                "layout": "vertical",
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": true,
-                                "conditions": {
-                                    "showRule": "show",
-                                    "conditionRule": "any",
-                                    "conditions": [
-                                        {
-                                            "id": "new4324-3082",
-                                            "field": "{field:hiv_1}",
-                                            "condition": "=",
-                                            "value": "d_1"
-                                        },
-                                        {
-                                            "id": "new2119-3054",
-                                            "field": "{field:hiv_1}",
-                                            "condition": "=",
-                                            "value": "e_1"
-                                        }
-                                    ]
-                                },
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Yes, currently pregnant",
-                                        "value": "a_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Yes, planning a pregnancy",
-                                        "value": "b_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "No",
-                                        "value": "c_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Not applicable",
+                                        "label": "None of the above",
                                         "value": "d_0",
                                         "isDefault": false
                                     }
-                                ],
-                                "multi": false
+                                ]
                             }
                         }
                     ]
@@ -167,8 +96,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "When were you last tested for HIV?",
-                                "handle": "hiv_3",
+                                "label": "Have you had scabies before?",
+                                "handle": "scabies_2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -191,23 +120,72 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Within the past 6 months",
-                                        "value": "a_0",
+                                        "label": "Yes — symptoms appeared quickly this time (1–2 days)",
+                                        "value": "a_4",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "6–12 months ago",
-                                        "value": "b_1",
+                                        "label": "Yes — but it was years ago",
+                                        "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "More than 1 year ago",
-                                        "value": "c_2",
+                                        "label": "No or unsure",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you had prolonged skin-to-skin contact with someone who has an itchy rash? (Scabies requires close contact — a quick handshake is usually not enough.)",
+                                "handle": "scabies_3",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, a sexual partner or bed partner",
+                                        "value": "a_5",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "I have never been tested",
-                                        "value": "d_3",
+                                        "label": "Yes, a household or family member",
+                                        "value": "b_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, in a care facility, dormitory, or similar setting",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "d_0",
                                         "isDefault": false
                                     },
                                     {
@@ -226,8 +204,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Are you currently taking PrEP (pre-exposure prophylaxis) or PEP (post-exposure prophylaxis)?",
-                                "handle": "hiv_4",
+                                "label": "Has someone you live with or are in close contact with been diagnosed with scabies?",
+                                "handle": "scabies_4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -250,28 +228,18 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Yes, I take PrEP consistently",
-                                        "value": "a_0",
+                                        "label": "Yes",
+                                        "value": "a_5",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Yes, but I sometimes miss doses",
-                                        "value": "b_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I recently started PEP after an exposure",
-                                        "value": "c_2",
+                                        "label": "No, but they have a persistent itchy rash",
+                                        "value": "b_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "d_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I'm not sure what PrEP/PEP is",
-                                        "value": "e_1",
+                                        "value": "c_0",
                                         "isDefault": false
                                     }
                                 ],
@@ -283,138 +251,10 @@
                 {
                     "fields": [
                         {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "Which of these high-risk exposures apply to you? Select all that apply.",
-                                "handle": "hiv_5",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Shared needles, syringes, or injection equipment",
-                                        "value": "a_5",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Sexual contact with someone living with HIV (not virally suppressed)",
-                                        "value": "b_5",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Occupational exposure (needlestick, blood splash)",
-                                        "value": "c_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Blood transfusion or medical procedure in a country with limited screening",
-                                        "value": "d_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "What types of sexual contact have you had recently without a condom? Select all that apply.",
-                                "handle": "hiv_6",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Receptive anal intercourse",
-                                        "value": "a_4",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Insertive anal intercourse",
-                                        "value": "b_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Vaginal intercourse",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Oral sex",
-                                        "value": "d_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "All contact was protected or none applies",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Have you been diagnosed with another STI (syphilis, gonorrhea, chlamydia, herpes) in the past 12 months?",
-                                "handle": "hiv_7",
+                                "label": "Have you shared bedding, towels, or clothing with someone who may have scabies? (Scabies mites can survive off the body for 2–3 days on fabric.)",
+                                "handle": "scabies_5",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -442,13 +282,13 @@
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "No",
-                                        "value": "b_0",
+                                        "label": "Possibly",
+                                        "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Unsure",
-                                        "value": "c_1",
+                                        "label": "No",
+                                        "value": "c_0",
                                         "isDefault": false
                                     }
                                 ],
@@ -462,8 +302,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
-                                "label": "Do any of these additional risk contexts apply? Select all that apply.",
-                                "handle": "hiv_8",
+                                "label": "Are you in a setting where scabies outbreaks are more common? Select all that apply.",
+                                "handle": "scabies_6",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -492,27 +332,27 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Sex with multiple or anonymous partners",
+                                        "label": "Nursing home or long-term care facility",
                                         "value": "a_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Sex work (exchanging sex for money, drugs, or housing)",
-                                        "value": "b_3",
+                                        "label": "Dormitory, shelter, or barracks",
+                                        "value": "b_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Sex while under the influence of drugs (especially methamphetamine or poppers)",
+                                        "label": "Prison or detention facility",
                                         "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Living in or traveling to a region with high HIV prevalence",
+                                        "label": "Childcare center",
                                         "value": "d_2",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "None of these",
+                                        "label": "None of the above",
                                         "value": "e_0",
                                         "isDefault": false
                                     }
@@ -526,8 +366,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Within 2–4 weeks after a potential exposure, did you experience a flu-like illness?",
-                                "handle": "hiv_9",
+                                "label": "Are you experiencing intense itching that is significantly worse at night?",
+                                "handle": "scabies_7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -550,13 +390,200 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Yes — fever, sore throat, rash, and swollen lymph nodes together",
+                                        "label": "Yes, severe itching that disrupts sleep",
                                         "value": "a_5",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Yes — some flu-like symptoms (fever, body aches)",
+                                        "label": "Yes, itching that worsens at night but is manageable",
+                                        "value": "b_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, general itching but not specifically worse at night",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No itching",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you noticed a rash with any of the following features? Select all that apply.",
+                                "handle": "scabies_8",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Tiny, raised bumps or blisters in a line or track pattern",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Small burrow lines (thin, grayish-white, thread-like marks)",
+                                        "value": "b_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Widespread red, bumpy rash",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Thick, crusted patches of skin (crusted/Norwegian scabies)",
+                                        "value": "d_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No rash",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Where are your symptoms located? Select all that apply. (Scabies mites prefer warm skin folds.)",
+                                "handle": "scabies_9",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Between fingers or on wrists",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Elbows, armpits, or waistline",
                                         "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Genitals, buttocks, or groin",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Breasts (around the nipples)",
+                                        "value": "d_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Widespread across the body",
+                                        "value": "e_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these / no rash",
+                                        "value": "f_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Are other people in your household or close contacts also experiencing similar itching or rash?",
+                                "handle": "scabies_10",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, multiple people",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, one other person",
+                                        "value": "b_4",
                                         "isDefault": false
                                     },
                                     {
@@ -578,19 +605,13 @@
                 {
                     "fields": [
                         {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "Have you experienced any of these persistent symptoms lasting weeks or longer? Select all that apply.",
-                                "handle": "hiv_10",
+                                "label": "How long have you had the itching or rash? (First-time scabies symptoms typically take 4–8 weeks to appear after infestation.)",
+                                "handle": "scabies_11",
                                 "instructions": null,
                                 "required": true,
-                                "multi": true,
                                 "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
                                 "enabled": true,
                                 "matchField": null,
                                 "placeholder": null,
@@ -610,95 +631,32 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "Unexplained weight loss (more than 10 lbs)",
+                                        "label": "1–2 days (and I've had scabies before)",
                                         "value": "a_4",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Chronic diarrhea lasting more than a month",
+                                        "label": "1–3 weeks",
                                         "value": "b_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Drenching night sweats",
-                                        "value": "c_3",
+                                        "label": "4–8 weeks",
+                                        "value": "c_4",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Persistent fatigue not explained by other causes",
-                                        "value": "d_2",
+                                        "label": "More than 2 months",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "None of these",
+                                        "label": "No symptoms",
                                         "value": "e_0",
                                         "isDefault": false
                                     }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "fields": [
-                        {
-                            "type": "verbb\\formie\\fields\\Checkboxes",
-                            "settings": {
-                                "label": "Have you noticed any of these signs that may suggest immune suppression? Select all that apply.",
-                                "handle": "hiv_11",
-                                "instructions": null,
-                                "required": true,
-                                "multi": true,
-                                "layout": "vertical",
-                                "toggleCheckbox": null,
-                                "toggleCheckboxLabel": null,
-                                "limitOptions": false,
-                                "min": null,
-                                "max": null,
-                                "enabled": true,
-                                "matchField": null,
-                                "placeholder": null,
-                                "defaultValue": null,
-                                "prePopulate": null,
-                                "errorMessage": null,
-                                "labelPosition": null,
-                                "instructionsPosition": null,
-                                "cssClasses": null,
-                                "containerAttributes": [],
-                                "inputAttributes": [],
-                                "includeInEmail": false,
-                                "emailValue": "label",
-                                "enableConditions": false,
-                                "conditions": null,
-                                "enableContentEncryption": false,
-                                "visibility": null,
-                                "options": [
-                                    {
-                                        "label": "Recurrent or unusual infections (thrush, pneumonia, shingles at a young age)",
-                                        "value": "a_4",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "White patches or sores in the mouth that won't heal",
-                                        "value": "b_3",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Persistent swollen lymph nodes in multiple areas",
-                                        "value": "c_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Skin rashes or lesions that are new or unusual",
-                                        "value": "d_2",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "None of these",
-                                        "value": "e_0",
-                                        "isDefault": false
-                                    }
-                                ]
+                                ],
+                                "multi": false
                             }
                         }
                     ]
@@ -708,8 +666,8 @@
                         {
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
-                                "label": "When did your symptoms first appear relative to a potential exposure?",
-                                "handle": "hiv_12",
+                                "label": "Have you tried over-the-counter anti-itch creams or antihistamines? Did they help?",
+                                "handle": "scabies_12",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -732,28 +690,18 @@
                                 "visibility": null,
                                 "options": [
                                     {
-                                        "label": "2–4 weeks after exposure (acute phase)",
-                                        "value": "a_4",
+                                        "label": "Yes, but the itching keeps coming back or barely improves",
+                                        "value": "a_3",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "Months after exposure (symptoms developed gradually)",
-                                        "value": "b_3",
+                                        "label": "Yes, and they helped significantly",
+                                        "value": "b_0",
                                         "isDefault": false
                                     },
                                     {
-                                        "label": "I have had these symptoms for a long time",
+                                        "label": "No, I haven't tried anything yet",
                                         "value": "c_1",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "I have not had any symptoms",
-                                        "value": "d_0",
-                                        "isDefault": false
-                                    },
-                                    {
-                                        "label": "Unsure",
-                                        "value": "e_1",
                                         "isDefault": false
                                     }
                                 ],
