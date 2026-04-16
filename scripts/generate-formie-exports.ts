@@ -270,22 +270,13 @@ function generateSymptomCheckerForm(config: SymptomCheckerConfig): object {
   const rows = config.questions.map((q) => {
     const handle = fieldHandle(prefix, q.id);
 
-    // For the symptom checker, encode condition scores in the value.
-    // Format: {letter}_{score_string} where score_string encodes condition:points pairs.
-    // Example: a_ch3-gn3-hv2  (for an option scoring ch:3, gn:3, hv:2)
-    // If no scores (empty object), use: a_0
-    const options = q.options.map((opt, i) => {
-      const entries = Object.entries(opt.scores).filter(([, v]) => v > 0);
-      const valueStr =
-        entries.length > 0
-          ? entries.map(([slug, pts]) => `${slug}${pts}`).join("-")
-          : "0";
-      return {
-        label: opt.label,
-        value: `${LETTERS[i]}_${valueStr}`,
-        isDefault: false,
-      };
-    });
+    // Symptom checker uses client-side scoring via calculateSymptomCheckerResults().
+    // Option values just need to be unique identifiers — use simple {letter}_{index}.
+    const options = q.options.map((opt, i) => ({
+      label: opt.label,
+      value: `${LETTERS[i]}_${i}`,
+      isDefault: false,
+    }));
 
     // Pregnancy conditional for symptom checker Q3 (id: 3)
     // Show when Q1 sex/gender = "Woman" (a) or "Prefer not to say" (e)
@@ -300,13 +291,13 @@ function generateSymptomCheckerForm(config: SymptomCheckerConfig): object {
             id: randomConditionId(),
             field: `{field:${sexGenderHandle}}`,
             condition: "=",
-            value: `a_bv2-yi2-ut3-pd2-ch2-tr2`, // Woman option value
+            value: "a_0", // Woman (index 0)
           },
           {
             id: randomConditionId(),
             field: `{field:${sexGenderHandle}}`,
             condition: "=",
-            value: `e_ch1-gn1-sy1-hv1-hs1`, // Prefer not to say option value
+            value: "e_4", // Prefer not to say (index 4)
           },
         ],
       };

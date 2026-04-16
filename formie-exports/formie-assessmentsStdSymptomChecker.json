@@ -62,27 +62,27 @@
                                 "options": [
                                     {
                                         "label": "Woman",
-                                        "value": "a_bv2-yi2-ut3-pd2-ch2-tr2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Man who has sex with men (MSM)",
-                                        "value": "b_hv3-sy3-gn3-hp3-hs1-ch2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Man who has sex with women only",
-                                        "value": "c_ch1-gn1-hs1-sy1-hv1",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Transgender woman",
-                                        "value": "d_hv3-sy2-gn2",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Prefer not to say",
-                                        "value": "e_ch1-gn1-sy1-hv1-hs1",
+                                        "value": "e_4",
                                         "isDefault": false
                                     }
                                 ],
@@ -121,22 +121,22 @@
                                 "options": [
                                     {
                                         "label": "Under 25",
-                                        "value": "a_ch3-gn3-hp2-pd2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "25–34",
-                                        "value": "b_sy3-hv2-gn2-ch2-tr1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "35–44",
-                                        "value": "c_sy2-hv2-tr2",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "45 or older",
-                                        "value": "d_ut1-tr1",
+                                        "value": "d_3",
                                         "isDefault": false
                                     }
                                 ],
@@ -174,16 +174,16 @@
                                     "conditionRule": "any",
                                     "conditions": [
                                         {
-                                            "id": "new2776-6186",
+                                            "id": "new1055-2516",
                                             "field": "{field:stdChecker_1}",
                                             "condition": "=",
-                                            "value": "a_bv2-yi2-ut3-pd2-ch2-tr2"
+                                            "value": "a_0"
                                         },
                                         {
-                                            "id": "new5883-2953",
+                                            "id": "new1024-8961",
                                             "field": "{field:stdChecker_1}",
                                             "condition": "=",
-                                            "value": "e_ch1-gn1-sy1-hv1-hs1"
+                                            "value": "e_4"
                                         }
                                     ]
                                 },
@@ -192,22 +192,22 @@
                                 "options": [
                                     {
                                         "label": "Yes, currently pregnant",
-                                        "value": "a_ch2-sy3-hv2-bv2-hs2-tr1",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, planning a pregnancy",
-                                        "value": "b_ch1-sy2-hv1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Not applicable",
-                                        "value": "d_0",
+                                        "value": "d_3",
                                         "isDefault": false
                                     }
                                 ],
@@ -246,22 +246,22 @@
                                 "options": [
                                     {
                                         "label": "Yes, within the past year",
-                                        "value": "a_ch3-gn3-sy2-hv2-hs1-pd2-tr2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, more than a year ago",
-                                        "value": "b_ch1-gn1-sy1-tr1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Unsure",
-                                        "value": "d_ch1-gn1-sy1-hv1",
+                                        "value": "d_3",
                                         "isDefault": false
                                     }
                                 ],
@@ -300,22 +300,22 @@
                                 "options": [
                                     {
                                         "label": "No",
-                                        "value": "a_hp3",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, but I didn't complete the full series",
-                                        "value": "b_hp2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, I completed the full series",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Unsure",
-                                        "value": "d_hp2",
+                                        "value": "d_3",
                                         "isDefault": false
                                     }
                                 ],
@@ -354,22 +354,22 @@
                                 "options": [
                                     {
                                         "label": "4 or more",
-                                        "value": "a_ch3-gn3-sy3-hv3-hs2-hp3-tr2-pd2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "2–3",
-                                        "value": "b_ch2-gn2-sy2-hv2-hs1-hp2-tr1-pd1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "1",
-                                        "value": "c_ch1-gn1-sy1-hv1-hs1-hp1",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "None",
-                                        "value": "d_0",
+                                        "value": "d_3",
                                         "isDefault": false
                                     }
                                 ],
@@ -414,32 +414,32 @@
                                 "options": [
                                     {
                                         "label": "Vaginal intercourse",
-                                        "value": "a_ch3-gn3-hv2-hs2-hp2-sy2-tr3-bv1-pd2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Anal intercourse",
-                                        "value": "b_gn3-hv4-sy3-ch2-hs2-hp2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Oral sex (giving)",
-                                        "value": "c_gn3-sy3-hs2-hp1",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Oral sex (receiving)",
-                                        "value": "d_hs2-gn1-sy1",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Genital skin-to-skin contact without penetration",
-                                        "value": "e_hs2-hp2",
+                                        "value": "e_4",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "All contact was protected or I have not been sexually active",
-                                        "value": "f_0",
+                                        "value": "f_5",
                                         "isDefault": false
                                     }
                                 ]
@@ -477,17 +477,17 @@
                                 "options": [
                                     {
                                         "label": "Yes",
-                                        "value": "a_ch4-gn4-sy4-hv4-hs4-hp3-tr3-pd2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "b_0",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Unsure",
-                                        "value": "c_ch1-gn1-sy1-hv1-hs1",
+                                        "value": "c_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -526,17 +526,17 @@
                                 "options": [
                                     {
                                         "label": "Yes, within the past year",
-                                        "value": "a_hv5",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, more than a year ago",
-                                        "value": "b_hv2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -581,42 +581,42 @@
                                 "options": [
                                     {
                                         "label": "I have met partners through apps or anonymous encounters",
-                                        "value": "a_sy2-hv2-gn2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I have exchanged sex for money, drugs, or housing",
-                                        "value": "b_hv3-sy3-gn2-ch2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I have a weakened immune system (HIV, immunosuppressive medication)",
-                                        "value": "c_hs2-hp3-yi2",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I currently have an IUD (intrauterine device)",
-                                        "value": "d_pd3",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I use vaginal douches or scented products",
-                                        "value": "e_bv4-yi1-pd2",
+                                        "value": "e_4",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I recently took antibiotics",
-                                        "value": "f_yi4-bv2",
+                                        "value": "f_5",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I have diabetes or use a urinary catheter",
-                                        "value": "g_ut3-yi2",
+                                        "value": "g_6",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "None of these apply",
-                                        "value": "h_0",
+                                        "value": "h_7",
                                         "isDefault": false
                                     }
                                 ]
@@ -654,37 +654,37 @@
                                 "options": [
                                     {
                                         "label": "Yes, thick yellowish or greenish discharge",
-                                        "value": "a_gn5-ch2-tr1",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, clear, watery, or milky discharge",
-                                        "value": "b_ch4-gn1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, thin grayish-white discharge with a fishy odor",
-                                        "value": "c_bv5",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, thick white cottage cheese-like discharge with no strong odor",
-                                        "value": "d_yi5",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, frothy yellowish-green discharge with a strong odor",
-                                        "value": "e_tr5",
+                                        "value": "e_4",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No unusual discharge",
-                                        "value": "f_0",
+                                        "value": "f_5",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Unsure",
-                                        "value": "g_ch1-gn1-bv1-yi1-tr1",
+                                        "value": "g_6",
                                         "isDefault": false
                                     }
                                 ],
@@ -723,27 +723,27 @@
                                 "options": [
                                     {
                                         "label": "Yes, painful blisters or ulcers that may come and go",
-                                        "value": "a_hs5",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, a firm, round, usually painless sore or ulcer",
-                                        "value": "b_sy5",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, flesh-colored or cauliflower-like warts or bumps",
-                                        "value": "c_hp5",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, but I'm not sure how to describe them",
-                                        "value": "d_hs2-sy2-hp2",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "e_0",
+                                        "value": "e_4",
                                         "isDefault": false
                                     }
                                 ],
@@ -782,17 +782,17 @@
                                 "options": [
                                     {
                                         "label": "Yes, severe burning",
-                                        "value": "a_ut5-gn4-ch3-tr2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, mild discomfort",
-                                        "value": "b_ut3-ch2-gn2-hs1-yi1-tr1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -831,17 +831,17 @@
                                 "options": [
                                     {
                                         "label": "Yes, intense itching that is hard to ignore",
-                                        "value": "a_yi5-tr3-hs2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, mild irritation",
-                                        "value": "b_yi3-tr2-bv1-hs1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -880,17 +880,17 @@
                                 "options": [
                                     {
                                         "label": "Yes, moderate to severe pain",
-                                        "value": "a_pd5-gn2-ch2-tr1",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, mild or dull discomfort",
-                                        "value": "b_pd3-ch1-gn1-ut2-tr1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -929,17 +929,17 @@
                                 "options": [
                                     {
                                         "label": "Yes, deep internal pain",
-                                        "value": "a_pd5-ch2-gn2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, pain or stinging at the entrance or on the surface",
-                                        "value": "b_hs4-yi3-tr2-bv1",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No or not sexually active",
-                                        "value": "c_0",
+                                        "value": "c_2",
                                         "isDefault": false
                                     }
                                 ],
@@ -978,27 +978,27 @@
                                 "options": [
                                     {
                                         "label": "Yes, bleeding between periods",
-                                        "value": "a_pd4-ch3-gn2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, bleeding after sexual intercourse",
-                                        "value": "b_pd3-ch2-gn2-hp2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Yes, both",
-                                        "value": "c_pd5-ch3-gn3-hp2",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "No",
-                                        "value": "d_0",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Not applicable",
-                                        "value": "e_0",
+                                        "value": "e_4",
                                         "isDefault": false
                                     }
                                 ],
@@ -1043,22 +1043,22 @@
                                 "options": [
                                     {
                                         "label": "Strong, persistent urge to urinate — even after using the bathroom",
-                                        "value": "a_ut5",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Cloudy, dark, or strong-smelling urine",
-                                        "value": "b_ut4",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Blood in urine (pink, red, or cola-colored)",
-                                        "value": "c_ut4",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "None of these",
-                                        "value": "d_0",
+                                        "value": "d_3",
                                         "isDefault": false
                                     }
                                 ]
@@ -1102,22 +1102,22 @@
                                 "options": [
                                     {
                                         "label": "Rash on palms, soles of feet, or torso",
-                                        "value": "a_sy5",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Patchy hair loss on scalp or eyebrows",
-                                        "value": "b_sy3",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Genital redness, swelling, or small cracks on the skin",
-                                        "value": "c_yi3-hs2",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "None of these",
-                                        "value": "d_0",
+                                        "value": "d_3",
                                         "isDefault": false
                                     }
                                 ]
@@ -1161,27 +1161,27 @@
                                 "options": [
                                     {
                                         "label": "Fever with no other obvious cause",
-                                        "value": "a_hv3-pd4-sy2-gn1",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Swollen lymph nodes (groin, neck, or armpits)",
-                                        "value": "b_hv3-hs2-sy2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Unexplained weight loss",
-                                        "value": "c_hv4",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Persistent fatigue or night sweats",
-                                        "value": "d_hv3",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "None of these",
-                                        "value": "e_0",
+                                        "value": "e_4",
                                         "isDefault": false
                                     }
                                 ]
@@ -1225,27 +1225,27 @@
                                 "options": [
                                     {
                                         "label": "Rectal pain, discharge, or bleeding",
-                                        "value": "a_gn3-ch3-hs2-sy2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Persistent sore throat after oral sexual contact",
-                                        "value": "b_gn3-sy2-hp2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Eye redness, pain, or discharge",
-                                        "value": "c_ch2-gn2",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Joint pain or swelling with skin lesions",
-                                        "value": "d_gn4-sy1",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "None of these",
-                                        "value": "e_0",
+                                        "value": "e_4",
                                         "isDefault": false
                                     }
                                 ]
@@ -1289,37 +1289,37 @@
                                 "options": [
                                     {
                                         "label": "Tingling or burning sensation BEFORE sores appear",
-                                        "value": "a_hs5",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Symptoms that come and go in recurring episodes",
-                                        "value": "b_hs5-yi2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "A painless sore that healed on its own, then a rash appeared",
-                                        "value": "c_sy5",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Fishy odor that worsens after sex or during menstruation",
-                                        "value": "d_bv4",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Symptoms worsened after taking antibiotics",
-                                        "value": "e_yi4",
+                                        "value": "e_4",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "Symptoms appeared or worsened around your menstrual period",
-                                        "value": "f_tr3-bv2",
+                                        "value": "f_5",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "None of these",
-                                        "value": "g_0",
+                                        "value": "g_6",
                                         "isDefault": false
                                     }
                                 ]
@@ -1357,27 +1357,27 @@
                                 "options": [
                                     {
                                         "label": "Within the past 1–2 weeks",
-                                        "value": "a_gn3-ch2-ut3-yi2-tr2",
+                                        "value": "a_0",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "2–4 weeks ago",
-                                        "value": "b_sy3-hv4-ch2-tr2",
+                                        "value": "b_1",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "1–3 months ago",
-                                        "value": "c_sy3-hs2-hp1",
+                                        "value": "c_2",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "More than 3 months ago",
-                                        "value": "d_hv2-hp1-sy1",
+                                        "value": "d_3",
                                         "isDefault": false
                                     },
                                     {
                                         "label": "I have not had any symptoms",
-                                        "value": "e_0",
+                                        "value": "e_4",
                                         "isDefault": false
                                     }
                                 ],
