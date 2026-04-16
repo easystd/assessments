@@ -65,9 +65,9 @@ const CONDITION_PREFIX: Record<string, string> = {
   "Yeast Infection": "yeast",
 };
 
-/** Generate unique field handle: {conditionPrefix}Q{questionNumber} */
+/** Generate unique field handle: {condition}_{number} */
 function fieldHandle(prefix: string, questionId: number): string {
-  return `${prefix}Q${questionId}`;
+  return `${prefix}_${questionId}`;
 }
 
 /** Generate a random Formie condition ID like "new1234-5678" */

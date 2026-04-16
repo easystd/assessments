@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you ever been specifically tested for herpes (HSV blood test or swab)?",
-                                "handle": "herpesQ1",
+                                "handle": "herpes_1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -92,7 +92,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Do you have a history of cold sores (oral herpes/HSV-1)?",
-                                "handle": "herpesQ2",
+                                "handle": "herpes_2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -146,7 +146,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you currently pregnant or planning to become pregnant?",
-                                "handle": "herpesQ3",
+                                "handle": "herpes_3",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -200,7 +200,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "How many lifetime sexual partners have you had? (Herpes risk is cumulative — the virus can transmit even without visible symptoms.)",
-                                "handle": "herpesQ4",
+                                "handle": "herpes_4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -254,7 +254,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "What types of skin-to-skin intimate contact have you had recently? Select all that apply.",
-                                "handle": "herpesQ5",
+                                "handle": "herpes_5",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -318,7 +318,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "How consistently do you use condoms? (Note: condoms reduce but do not fully prevent herpes, which spreads via skin-to-skin contact.)",
-                                "handle": "herpesQ6",
+                                "handle": "herpes_6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -377,7 +377,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Has a sexual partner told you they have genital herpes (HSV-1 or HSV-2)?",
-                                "handle": "herpesQ7",
+                                "handle": "herpes_7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -426,7 +426,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed any painful blisters, sores, or ulcers on or around your genitals, buttocks, thighs, or anus?",
-                                "handle": "herpesQ8",
+                                "handle": "herpes_8",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -485,7 +485,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of these prodromal or outbreak-associated symptoms? Select all that apply.",
-                                "handle": "herpesQ9",
+                                "handle": "herpes_9",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -549,7 +549,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these factors that increase herpes susceptibility apply to you? Select all that apply.",
-                                "handle": "herpesQ10",
+                                "handle": "herpes_10",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -608,7 +608,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "How would you describe the pattern of your symptoms?",
-                                "handle": "herpesQ11",
+                                "handle": "herpes_11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",

@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you had a yeast infection before?",
-                                "handle": "yeastQ1",
+                                "handle": "yeast_1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -92,7 +92,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these medical conditions apply to you? Select all that apply.",
-                                "handle": "yeastQ2",
+                                "handle": "yeast_2",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -151,7 +151,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you recently taken antibiotics?",
-                                "handle": "yeastQ3",
+                                "handle": "yeast_3",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -205,7 +205,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Are you taking any of the following medications? Select all that apply.",
-                                "handle": "yeastQ4",
+                                "handle": "yeast_4",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -264,7 +264,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these lifestyle factors apply? Select all that apply.",
-                                "handle": "yeastQ5",
+                                "handle": "yeast_5",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -328,7 +328,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you been under significant stress or sleep deprived recently?",
-                                "handle": "yeastQ6",
+                                "handle": "yeast_6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -377,7 +377,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you experiencing vaginal itching or irritation?",
-                                "handle": "yeastQ7",
+                                "handle": "yeast_7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -431,7 +431,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed any unusual vaginal discharge?",
-                                "handle": "yeastQ8",
+                                "handle": "yeast_8",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -485,7 +485,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed any of these vulvar or external symptoms? Select all that apply.",
-                                "handle": "yeastQ9",
+                                "handle": "yeast_9",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -549,7 +549,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did these symptoms begin, and have you had them before?",
-                                "handle": "yeastQ10",
+                                "handle": "yeast_10",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -608,7 +608,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you tried over-the-counter antifungal treatment (Monistat, clotrimazole)? If so, did it help?",
-                                "handle": "yeastQ11",
+                                "handle": "yeast_11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",

@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your sex or gender?",
-                                "handle": "gonorrheaQ1",
+                                "handle": "gonorrhea_1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -92,7 +92,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your age range?",
-                                "handle": "gonorrheaQ2",
+                                "handle": "gonorrhea_2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -146,7 +146,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you been diagnosed with gonorrhea, chlamydia, or another STI before?",
-                                "handle": "gonorrheaQ3",
+                                "handle": "gonorrhea_3",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -200,7 +200,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you had a new or casual sexual partner in the past 30 days?",
-                                "handle": "gonorrheaQ4",
+                                "handle": "gonorrhea_4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -254,7 +254,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Which types of recent sexual contact apply to you? Select all that apply.",
-                                "handle": "gonorrheaQ5",
+                                "handle": "gonorrhea_5",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -318,7 +318,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Has a sexual partner been diagnosed with gonorrhea, or have you been notified of a gonorrhea exposure?",
-                                "handle": "gonorrheaQ6",
+                                "handle": "gonorrhea_6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -367,7 +367,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed any unusual genital discharge?",
-                                "handle": "gonorrheaQ7",
+                                "handle": "gonorrhea_7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -421,7 +421,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of the following urogenital symptoms? Select all that apply.",
-                                "handle": "gonorrheaQ8",
+                                "handle": "gonorrhea_8",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -485,7 +485,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed symptoms at any of these other body sites? Select all that apply.",
-                                "handle": "gonorrheaQ9",
+                                "handle": "gonorrhea_9",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -549,7 +549,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you experienced any joint pain, swelling, or skin lesions (small pus-filled spots) that appeared around the same time as other symptoms?",
-                                "handle": "gonorrheaQ10",
+                                "handle": "gonorrhea_10",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -603,7 +603,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did your symptoms first appear after your most recent sexual contact?",
-                                "handle": "gonorrheaQ11",
+                                "handle": "gonorrhea_11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",

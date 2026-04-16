@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your biological sex?",
-                                "handle": "utiQ1",
+                                "handle": "uti_1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -87,7 +87,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you had a UTI before?",
-                                "handle": "utiQ2",
+                                "handle": "uti_2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -141,7 +141,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these sexual activity risk factors apply? Select all that apply.",
-                                "handle": "utiQ3",
+                                "handle": "uti_3",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -200,7 +200,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these medical conditions apply to you? Select all that apply.",
-                                "handle": "utiQ4",
+                                "handle": "uti_4",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -264,7 +264,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these habits or factors apply? Select all that apply.",
-                                "handle": "utiQ5",
+                                "handle": "uti_5",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -328,7 +328,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you recently taken antibiotics for any reason?",
-                                "handle": "utiQ6",
+                                "handle": "uti_6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -382,7 +382,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Did your symptoms begin within 24–48 hours after sexual intercourse?",
-                                "handle": "utiQ7",
+                                "handle": "uti_7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -431,7 +431,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you experiencing a strong, persistent urge to urinate?",
-                                "handle": "utiQ8",
+                                "handle": "uti_8",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -485,7 +485,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of these lower urinary tract symptoms? Select all that apply.",
-                                "handle": "utiQ9",
+                                "handle": "uti_9",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -549,7 +549,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed any of these signs that may suggest the infection has spread to your kidneys? Select all that apply.",
-                                "handle": "utiQ10",
+                                "handle": "uti_10",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -613,7 +613,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did these urinary symptoms begin?",
-                                "handle": "utiQ11",
+                                "handle": "uti_11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
