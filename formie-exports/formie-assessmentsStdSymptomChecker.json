@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your sex or gender?",
-                                "handle": "whatIsYourSexOrGender",
+                                "handle": "stdCheckerQ1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -97,7 +97,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your age range?",
-                                "handle": "whatIsYourAgeRange",
+                                "handle": "stdCheckerQ2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -151,7 +151,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you currently pregnant or planning a pregnancy?",
-                                "handle": "areYouCurrentlyPregnantOrPlanningAPregnancy",
+                                "handle": "stdCheckerQ3",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -174,14 +174,14 @@
                                     "conditionRule": "any",
                                     "conditions": [
                                         {
-                                            "id": "new4135-4634",
-                                            "field": "{field:whatIsYourSexOrGender}",
+                                            "id": "new1808-3069",
+                                            "field": "{field:stdCheckerQ1}",
                                             "condition": "=",
                                             "value": "a_bv2-yi2-ut3-pd2-ch2-tr2"
                                         },
                                         {
-                                            "id": "new8714-7597",
-                                            "field": "{field:whatIsYourSexOrGender}",
+                                            "id": "new4703-8069",
+                                            "field": "{field:stdCheckerQ1}",
                                             "condition": "=",
                                             "value": "e_ch1-gn1-sy1-hv1-hs1"
                                         }
@@ -222,7 +222,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you been diagnosed with an STI before?",
-                                "handle": "haveYouBeenDiagnosedWithAnStiBefore",
+                                "handle": "stdCheckerQ4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -276,7 +276,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you been vaccinated against HPV?",
-                                "handle": "haveYouBeenVaccinatedAgainstHpv",
+                                "handle": "stdCheckerQ5",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -330,7 +330,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "How many sexual partners have you had in the past 6 months?",
-                                "handle": "howManySexualPartnersHaveYouHadInThePast6Months",
+                                "handle": "stdCheckerQ6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -384,7 +384,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "What types of sexual contact have you had recently without a condom or barrier? Select all that apply.",
-                                "handle": "whatTypesOfSexualContactHaveYouHadRecentlyWithoutACondomOrBarrierSelec",
+                                "handle": "stdCheckerQ7",
                                 "instructions": null,
                                 "required": false,
                                 "multi": true,
@@ -453,7 +453,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Has a sexual partner been diagnosed with an STD, or have you been notified of an exposure?",
-                                "handle": "hasASexualPartnerBeenDiagnosedWithAnStdOrHaveYouBeenNotifiedOfAnExposu",
+                                "handle": "stdCheckerQ8",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -502,7 +502,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you shared needles, syringes, or injection equipment?",
-                                "handle": "haveYouSharedNeedlesSyringesOrInjectionEquipment",
+                                "handle": "stdCheckerQ9",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -551,7 +551,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these additional risk factors apply? Select all that apply.",
-                                "handle": "doAnyOfTheseAdditionalRiskFactorsApplySelectAllThatApply",
+                                "handle": "stdCheckerQ10",
                                 "instructions": null,
                                 "required": false,
                                 "multi": true,
@@ -630,7 +630,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed any unusual genital discharge?",
-                                "handle": "haveYouNoticedAnyUnusualGenitalDischarge",
+                                "handle": "stdCheckerQ11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -699,7 +699,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed any sores, blisters, warts, or unusual growths on your genitals, anus, or mouth?",
-                                "handle": "haveYouNoticedAnySoresBlistersWartsOrUnusualGrowthsOnYourGenitalsAnusO",
+                                "handle": "stdCheckerQ12",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -758,7 +758,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you experiencing pain or burning during urination?",
-                                "handle": "areYouExperiencingPainOrBurningDuringUrination",
+                                "handle": "stdCheckerQ13",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -807,7 +807,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you experiencing genital itching or irritation?",
-                                "handle": "areYouExperiencingGenitalItchingOrIrritation",
+                                "handle": "stdCheckerQ14",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -856,7 +856,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you experiencing pelvic or lower abdominal pain?",
-                                "handle": "areYouExperiencingPelvicOrLowerAbdominalPain",
+                                "handle": "stdCheckerQ15",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -905,7 +905,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Do you experience pain during sexual intercourse?",
-                                "handle": "doYouExperiencePainDuringSexualIntercourse",
+                                "handle": "stdCheckerQ16",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -954,7 +954,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed abnormal vaginal bleeding between periods or after sex?",
-                                "handle": "haveYouNoticedAbnormalVaginalBleedingBetweenPeriodsOrAfterSex",
+                                "handle": "stdCheckerQ17",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -1013,7 +1013,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of these urinary symptoms? Select all that apply.",
-                                "handle": "haveYouExperiencedAnyOfTheseUrinarySymptomsSelectAllThatApply",
+                                "handle": "stdCheckerQ18",
                                 "instructions": null,
                                 "required": false,
                                 "multi": true,
@@ -1072,7 +1072,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed any skin changes, rashes, or hair loss? Select all that apply.",
-                                "handle": "haveYouNoticedAnySkinChangesRashesOrHairLossSelectAllThatApply",
+                                "handle": "stdCheckerQ19",
                                 "instructions": null,
                                 "required": false,
                                 "multi": true,
@@ -1131,7 +1131,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of these systemic symptoms? Select all that apply.",
-                                "handle": "haveYouExperiencedAnyOfTheseSystemicSymptomsSelectAllThatApply",
+                                "handle": "stdCheckerQ20",
                                 "instructions": null,
                                 "required": false,
                                 "multi": true,
@@ -1195,7 +1195,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed symptoms in any of these areas? Select all that apply.",
-                                "handle": "haveYouNoticedSymptomsInAnyOfTheseAreasSelectAllThatApply",
+                                "handle": "stdCheckerQ21",
                                 "instructions": null,
                                 "required": false,
                                 "multi": true,
@@ -1259,7 +1259,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these patterns apply to your symptoms? Select all that apply.",
-                                "handle": "doAnyOfThesePatternsApplyToYourSymptomsSelectAllThatApply",
+                                "handle": "stdCheckerQ22",
                                 "instructions": null,
                                 "required": false,
                                 "multi": true,
@@ -1333,7 +1333,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did your symptoms first appear?",
-                                "handle": "whenDidYourSymptomsFirstAppear",
+                                "handle": "stdCheckerQ23",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",

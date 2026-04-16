@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your sex or gender?",
-                                "handle": "whatIsYourSexOrGender",
+                                "handle": "gonorrheaQ1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -92,7 +92,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your age range?",
-                                "handle": "whatIsYourAgeRange",
+                                "handle": "gonorrheaQ2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -146,7 +146,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you been diagnosed with gonorrhea, chlamydia, or another STI before?",
-                                "handle": "haveYouBeenDiagnosedWithGonorrheaChlamydiaOrAnotherStiBefore",
+                                "handle": "gonorrheaQ3",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -200,7 +200,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you had a new or casual sexual partner in the past 30 days?",
-                                "handle": "haveYouHadANewOrCasualSexualPartnerInThePast30Days",
+                                "handle": "gonorrheaQ4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -254,7 +254,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Which types of recent sexual contact apply to you? Select all that apply.",
-                                "handle": "whichTypesOfRecentSexualContactApplyToYouSelectAllThatApply",
+                                "handle": "gonorrheaQ5",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -318,7 +318,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Has a sexual partner been diagnosed with gonorrhea, or have you been notified of a gonorrhea exposure?",
-                                "handle": "hasASexualPartnerBeenDiagnosedWithGonorrheaOrHaveYouBeenNotifiedOfAGon",
+                                "handle": "gonorrheaQ6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -367,7 +367,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed any unusual genital discharge?",
-                                "handle": "haveYouNoticedAnyUnusualGenitalDischarge",
+                                "handle": "gonorrheaQ7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -421,7 +421,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of the following urogenital symptoms? Select all that apply.",
-                                "handle": "haveYouExperiencedAnyOfTheFollowingUrogenitalSymptomsSelectAllThatAppl",
+                                "handle": "gonorrheaQ8",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -485,7 +485,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed symptoms at any of these other body sites? Select all that apply.",
-                                "handle": "haveYouNoticedSymptomsAtAnyOfTheseOtherBodySitesSelectAllThatApply",
+                                "handle": "gonorrheaQ9",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -549,7 +549,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you experienced any joint pain, swelling, or skin lesions (small pus-filled spots) that appeared around the same time as other symptoms?",
-                                "handle": "haveYouExperiencedAnyJointPainSwellingOrSkinLesionsThatAppearedAroundT",
+                                "handle": "gonorrheaQ10",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -603,7 +603,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did your symptoms first appear after your most recent sexual contact?",
-                                "handle": "whenDidYourSymptomsFirstAppearAfterYourMostRecentSexualContact",
+                                "handle": "gonorrheaQ11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",

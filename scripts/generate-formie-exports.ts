@@ -51,21 +51,23 @@ const PAGE_SETTINGS = {
 
 const LETTERS = "abcdefghijklmnopqrstuvwxyz";
 
-/** Convert label text to Formie-style camelCase handle, truncated to ~70 chars */
-function labelToHandle(label: string): string {
-  // Remove parenthetical text, special chars
-  const cleaned = label
-    .replace(/\(.*?\)/g, "")
-    .replace(/[^a-zA-Z0-9\s]/g, "")
-    .trim();
-  const words = cleaned.split(/\s+/).filter(Boolean);
-  const handle =
-    words[0].toLowerCase() +
-    words
-      .slice(1)
-      .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
-      .join("");
-  return handle.slice(0, 70);
+/** Short slug prefix per condition for unique field handles */
+const CONDITION_PREFIX: Record<string, string> = {
+  "Chlamydia": "chlamydia",
+  "Gonorrhea": "gonorrhea",
+  "Syphilis": "syphilis",
+  "HIV": "hiv",
+  "Herpes": "herpes",
+  "HPV": "hpv",
+  "PID": "pid",
+  "BV": "bv",
+  "UTI": "uti",
+  "Yeast Infection": "yeast",
+};
+
+/** Generate unique field handle: {conditionPrefix}Q{questionNumber} */
+function fieldHandle(prefix: string, questionId: number): string {
+  return `${prefix}Q${questionId}`;
 }
 
 /** Generate a random Formie condition ID like "new1234-5678" */
@@ -183,15 +185,12 @@ const PREGNANCY_CONDITIONALS: Record<string, PregnancyConditional> = {
 
 function generateAssessmentForm(config: AssessmentConfig): object {
   const conditionName = config.shortName;
+  const prefix = CONDITION_PREFIX[conditionName] ?? conditionName.toLowerCase().replace(/[^a-z0-9]/g, "");
   const formHandle = `assessments${conditionName.replace(/[^a-zA-Z0-9]/g, "")}`;
   const formTitle = `Assessments - ${config.condition}`;
 
-  // Track handles for sex/gender question (needed for pregnancy conditionals)
-  const fieldHandles: Record<number, string> = {};
-
   const rows = config.questions.map((q) => {
-    const handle = labelToHandle(q.question);
-    fieldHandles[q.id] = handle;
+    const handle = fieldHandle(prefix, q.id);
 
     const options = q.options.map((opt, i) => ({
       label: opt.label,
@@ -207,9 +206,9 @@ function generateAssessmentForm(config: AssessmentConfig): object {
 
     if (slugKey) {
       const pc = PREGNANCY_CONDITIONALS[slugKey];
-      const sexGenderHandle = fieldHandles[pc.sexGenderQId];
-      if (sexGenderHandle) {
-        const sexGenderQ = config.questions.find((qq) => qq.id === pc.sexGenderQId);
+      const sexGenderHandle = fieldHandle(prefix, pc.sexGenderQId);
+      const sexGenderQ = config.questions.find((qq) => qq.id === pc.sexGenderQId);
+      if (sexGenderQ) {
         conditions = {
           showRule: "show",
           conditionRule: "any",
@@ -217,7 +216,7 @@ function generateAssessmentForm(config: AssessmentConfig): object {
             id: randomConditionId(),
             field: `{field:${sexGenderHandle}}`,
             condition: "=",
-            value: `${LETTERS[idx]}_${sexGenderQ!.options[idx].points}`,
+            value: `${LETTERS[idx]}_${sexGenderQ.options[idx].points}`,
           })),
         };
       }
@@ -226,7 +225,7 @@ function generateAssessmentForm(config: AssessmentConfig): object {
     const fieldOpts: FieldOptions = {
       label: q.question,
       handle,
-      required: q.type === "single" ? true : true,
+      required: true,
       options,
       type: q.type === "single" ? "radio" : "checkboxes",
       conditions,
@@ -264,14 +263,12 @@ function generateAssessmentForm(config: AssessmentConfig): object {
 // ── Symptom checker form generation ─────────────────────────────────
 
 function generateSymptomCheckerForm(config: SymptomCheckerConfig): object {
+  const prefix = "stdChecker";
   const formHandle = "assessmentsStdSymptomChecker";
   const formTitle = "Assessments - STD Symptom Checker";
 
-  const fieldHandles: Record<number, string> = {};
-
   const rows = config.questions.map((q) => {
-    const handle = labelToHandle(q.question);
-    fieldHandles[q.id] = handle;
+    const handle = fieldHandle(prefix, q.id);
 
     // For the symptom checker, encode condition scores in the value.
     // Format: {letter}_{score_string} where score_string encodes condition:points pairs.
@@ -294,27 +291,25 @@ function generateSymptomCheckerForm(config: SymptomCheckerConfig): object {
     // Show when Q1 sex/gender = "Woman" (a) or "Prefer not to say" (e)
     let conditions: FieldOptions["conditions"] = undefined;
     if (q.id === 3) {
-      const sexGenderHandle = fieldHandles[1];
-      if (sexGenderHandle) {
-        conditions = {
-          showRule: "show",
-          conditionRule: "any",
-          conditions: [
-            {
-              id: randomConditionId(),
-              field: `{field:${sexGenderHandle}}`,
-              condition: "=",
-              value: `a_bv2-yi2-ut3-pd2-ch2-tr2`, // Woman option value
-            },
-            {
-              id: randomConditionId(),
-              field: `{field:${sexGenderHandle}}`,
-              condition: "=",
-              value: `e_ch1-gn1-sy1-hv1-hs1`, // Prefer not to say option value
-            },
-          ],
-        };
-      }
+      const sexGenderHandle = fieldHandle(prefix, 1);
+      conditions = {
+        showRule: "show",
+        conditionRule: "any",
+        conditions: [
+          {
+            id: randomConditionId(),
+            field: `{field:${sexGenderHandle}}`,
+            condition: "=",
+            value: `a_bv2-yi2-ut3-pd2-ch2-tr2`, // Woman option value
+          },
+          {
+            id: randomConditionId(),
+            field: `{field:${sexGenderHandle}}`,
+            condition: "=",
+            value: `e_ch1-gn1-sy1-hv1-hs1`, // Prefer not to say option value
+          },
+        ],
+      };
     }
 
     const fieldOpts: FieldOptions = {

@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your sex or gender?",
-                                "handle": "whatIsYourSexOrGender",
+                                "handle": "syphilisQ1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -92,7 +92,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your age range?",
-                                "handle": "whatIsYourAgeRange",
+                                "handle": "syphilisQ2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -146,7 +146,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you ever been tested or treated for syphilis?",
-                                "handle": "haveYouEverBeenTestedOrTreatedForSyphilis",
+                                "handle": "syphilisQ3",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -200,7 +200,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you currently pregnant or planning a pregnancy?",
-                                "handle": "areYouCurrentlyPregnantOrPlanningAPregnancy",
+                                "handle": "syphilisQ4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -223,14 +223,14 @@
                                     "conditionRule": "any",
                                     "conditions": [
                                         {
-                                            "id": "new2528-8879",
-                                            "field": "{field:whatIsYourSexOrGender}",
+                                            "id": "new7231-5578",
+                                            "field": "{field:syphilisQ1}",
                                             "condition": "=",
                                             "value": "c_1"
                                         },
                                         {
-                                            "id": "new6643-4550",
-                                            "field": "{field:whatIsYourSexOrGender}",
+                                            "id": "new3687-8991",
+                                            "field": "{field:syphilisQ1}",
                                             "condition": "=",
                                             "value": "d_1"
                                         }
@@ -271,7 +271,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Which types of intimate contact have you had recently? Select all that apply.",
-                                "handle": "whichTypesOfIntimateContactHaveYouHadRecentlySelectAllThatApply",
+                                "handle": "syphilisQ5",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -335,7 +335,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Which of the following apply to your recent sexual activity? Select all that apply.",
-                                "handle": "whichOfTheFollowingApplyToYourRecentSexualActivitySelectAllThatApply",
+                                "handle": "syphilisQ6",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -399,7 +399,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Has a sexual partner been diagnosed with syphilis, or have you been notified of a syphilis exposure by a partner or health department?",
-                                "handle": "hasASexualPartnerBeenDiagnosedWithSyphilisOrHaveYouBeenNotifiedOfASyph",
+                                "handle": "syphilisQ7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -448,7 +448,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Do you have HIV, or have you been diagnosed with another STI in the past 12 months?",
-                                "handle": "doYouHaveHivOrHaveYouBeenDiagnosedWithAnotherStiInThePast12Months",
+                                "handle": "syphilisQ8",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -502,7 +502,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed a firm, round, usually painless sore or ulcer on or around your genitals, anus, or mouth?",
-                                "handle": "haveYouNoticedAFirmRoundUsuallyPainlessSoreOrUlcerOnOrAroundYourGenita",
+                                "handle": "syphilisQ9",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -556,7 +556,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed any of these skin or body changes? Select all that apply.",
-                                "handle": "haveYouNoticedAnyOfTheseSkinOrBodyChangesSelectAllThatApply",
+                                "handle": "syphilisQ10",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -620,7 +620,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of these neurological symptoms? Select all that apply.",
-                                "handle": "haveYouExperiencedAnyOfTheseNeurologicalSymptomsSelectAllThatApply",
+                                "handle": "syphilisQ11",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -684,7 +684,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did your symptoms first appear, and have they changed over time?",
-                                "handle": "whenDidYourSymptomsFirstAppearAndHaveTheyChangedOverTime",
+                                "handle": "syphilisQ12",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",

@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "What is your age range?",
-                                "handle": "whatIsYourAgeRange",
+                                "handle": "pidQ1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -92,7 +92,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you been diagnosed with chlamydia, gonorrhea, or another STI?",
-                                "handle": "haveYouBeenDiagnosedWithChlamydiaGonorrheaOrAnotherSti",
+                                "handle": "pidQ2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -146,7 +146,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do any of these PID risk factors apply to you? Select all that apply.",
-                                "handle": "doAnyOfThesePidRiskFactorsApplyToYouSelectAllThatApply",
+                                "handle": "pidQ3",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -210,7 +210,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Which of the following describe your recent sexual activity? Select all that apply.",
-                                "handle": "whichOfTheFollowingDescribeYourRecentSexualActivitySelectAllThatApply",
+                                "handle": "pidQ4",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -269,7 +269,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Do you currently have or have you recently been treated for bacterial vaginosis (BV)? (BV disrupts vaginal flora and increases the risk of PID.)",
-                                "handle": "doYouCurrentlyHaveOrHaveYouRecentlyBeenTreatedForBacterialVaginosis",
+                                "handle": "pidQ5",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -323,7 +323,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When were you last tested for STIs (chlamydia, gonorrhea)?",
-                                "handle": "whenWereYouLastTestedForStis",
+                                "handle": "pidQ6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -382,7 +382,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you experiencing lower abdominal or pelvic pain?",
-                                "handle": "areYouExperiencingLowerAbdominalOrPelvicPain",
+                                "handle": "pidQ7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -436,7 +436,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of these discharge or fever symptoms? Select all that apply.",
-                                "handle": "haveYouExperiencedAnyOfTheseDischargeOrFeverSymptomsSelectAllThatApply",
+                                "handle": "pidQ8",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -500,7 +500,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you noticed any of these menstrual or urinary changes? Select all that apply.",
-                                "handle": "haveYouNoticedAnyOfTheseMenstrualOrUrinaryChangesSelectAllThatApply",
+                                "handle": "pidQ9",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -564,7 +564,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Have you experienced any of these signs of a more severe infection? Select all that apply.",
-                                "handle": "haveYouExperiencedAnyOfTheseSignsOfAMoreSevereInfectionSelectAllThatAp",
+                                "handle": "pidQ10",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -623,7 +623,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did these symptoms begin?",
-                                "handle": "whenDidTheseSymptomsBegin",
+                                "handle": "pidQ11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",

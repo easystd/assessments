@@ -38,7 +38,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you had bacterial vaginosis before?",
-                                "handle": "haveYouHadBacterialVaginosisBefore",
+                                "handle": "bvQ1",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -92,7 +92,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Are you currently pregnant?",
-                                "handle": "areYouCurrentlyPregnant",
+                                "handle": "bvQ2",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -146,7 +146,7 @@
                             "type": "verbb\\formie\\fields\\Checkboxes",
                             "settings": {
                                 "label": "Do you use any of the following? Select all that apply.",
-                                "handle": "doYouUseAnyOfTheFollowingSelectAllThatApply",
+                                "handle": "bvQ3",
                                 "instructions": null,
                                 "required": true,
                                 "multi": true,
@@ -205,7 +205,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you had a new sexual partner recently, or multiple partners in the past 12 months?",
-                                "handle": "haveYouHadANewSexualPartnerRecentlyOrMultiplePartnersInThePast12Months",
+                                "handle": "bvQ4",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -259,7 +259,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Do you have a female sexual partner?",
-                                "handle": "doYouHaveAFemaleSexualPartner",
+                                "handle": "bvQ5",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -308,7 +308,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you recently taken antibiotics for any reason?",
-                                "handle": "haveYouRecentlyTakenAntibioticsForAnyReason",
+                                "handle": "bvQ6",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -362,7 +362,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Do you currently have an IUD (intrauterine device)?",
-                                "handle": "doYouCurrentlyHaveAnIud",
+                                "handle": "bvQ7",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -411,7 +411,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed any unusual vaginal discharge?",
-                                "handle": "haveYouNoticedAnyUnusualVaginalDischarge",
+                                "handle": "bvQ8",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -465,7 +465,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Have you noticed a vaginal odor?",
-                                "handle": "haveYouNoticedAVaginalOdor",
+                                "handle": "bvQ9",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -519,7 +519,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "How does your discharge compare to typical yeast infection symptoms?",
-                                "handle": "howDoesYourDischargeCompareToTypicalYeastInfectionSymptoms",
+                                "handle": "bvQ10",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -573,7 +573,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "Do your symptoms seem to worsen during or just after your menstrual period?",
-                                "handle": "doYourSymptomsSeemToWorsenDuringOrJustAfterYourMenstrualPeriod",
+                                "handle": "bvQ11",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
@@ -627,7 +627,7 @@
                             "type": "verbb\\formie\\fields\\Radio",
                             "settings": {
                                 "label": "When did these symptoms start, and do they recur?",
-                                "handle": "whenDidTheseSymptomsStartAndDoTheyRecur",
+                                "handle": "bvQ12",
                                 "instructions": null,
                                 "required": true,
                                 "layout": "vertical",
