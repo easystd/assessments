@@ -277,7 +277,7 @@ function generateAssessmentForm(config: AssessmentConfig): object {
 // ── Symptom checker form generation ─────────────────────────────────
 
 function generateSymptomCheckerForm(config: SymptomCheckerConfig): object {
-  const prefix = "stdChecker";
+  const prefix = "stds";
   const formHandle = "assessmentsStdSymptomChecker";
   const formTitle = "Assessments - STD Symptom Checker";
 
@@ -320,7 +320,7 @@ function generateSymptomCheckerForm(config: SymptomCheckerConfig): object {
     const fieldOpts: FieldOptions = {
       label: q.question,
       handle,
-      required: q.type === "single",
+      required: true,
       options,
       type: q.type === "single" ? "radio" : "checkboxes",
       conditions,
