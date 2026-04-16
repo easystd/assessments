@@ -120,13 +120,13 @@
                                     "conditionRule": "any",
                                     "conditions": [
                                         {
-                                            "id": "new4324-3082",
+                                            "id": "new7421-6640",
                                             "field": "{field:hiv_1}",
                                             "condition": "=",
                                             "value": "d_1"
                                         },
                                         {
-                                            "id": "new2119-3054",
+                                            "id": "new4337-8572",
                                             "field": "{field:hiv_1}",
                                             "condition": "=",
                                             "value": "e_1"
