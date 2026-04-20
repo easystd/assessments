@@ -84,10 +84,14 @@ function fieldHandle(prefix: string, questionId: number): string {
   return `${prefix}_${questionId}`;
 }
 
-/** Generate a random Formie condition ID like "new1234-5678" */
-function randomConditionId(): string {
-  const a = Math.floor(1000 + Math.random() * 9000);
-  const b = Math.floor(1000 + Math.random() * 9000);
+/** Generate a deterministic Formie condition ID from a seed string */
+function conditionId(seed: string): string {
+  let h = 0;
+  for (let i = 0; i < seed.length; i++) {
+    h = (Math.imul(31, h) + seed.charCodeAt(i)) | 0;
+  }
+  const a = 1000 + (Math.abs(h) % 9000);
+  const b = 1000 + (Math.abs(Math.imul(h, 2654435761)) % 9000);
   return `new${a}-${b}`;
 }
 
@@ -227,7 +231,7 @@ function generateAssessmentForm(config: AssessmentConfig): object {
           showRule: "show",
           conditionRule: "any",
           conditions: pc.showForOptionIndices.map((idx) => ({
-            id: randomConditionId(),
+            id: conditionId(`${handle}_${sexGenderHandle}_${idx}`),
             field: `{field:${sexGenderHandle}}`,
             condition: "=",
             value: `${LETTERS[idx]}_${sexGenderQ.options[idx].points}`,
@@ -302,13 +306,13 @@ function generateSymptomCheckerForm(config: SymptomCheckerConfig): object {
         conditionRule: "any",
         conditions: [
           {
-            id: randomConditionId(),
+            id: conditionId(`stds_3_stds_1_0`),
             field: `{field:${sexGenderHandle}}`,
             condition: "=",
             value: "a_0", // Woman (index 0)
           },
           {
-            id: randomConditionId(),
+            id: conditionId(`stds_3_stds_1_4`),
             field: `{field:${sexGenderHandle}}`,
             condition: "=",
             value: "e_4", // Prefer not to say (index 4)

@@ -223,13 +223,13 @@
                                     "conditionRule": "any",
                                     "conditions": [
                                         {
-                                            "id": "new2180-1487",
+                                            "id": "new1005-4955",
                                             "field": "{field:chlamydia_1}",
                                             "condition": "=",
                                             "value": "a_2"
                                         },
                                         {
-                                            "id": "new7897-8720",
+                                            "id": "new1008-9032",
                                             "field": "{field:chlamydia_1}",
                                             "condition": "=",
                                             "value": "d_1"
