@@ -361,7 +361,7 @@ const outDir = join(process.cwd(), "formie-exports");
 mkdirSync(outDir, { recursive: true });
 
 const assessments: AssessmentConfig[] = [
-  // Skip chlamydia — user already created it manually in Formie
+  chlamydia,
   gonorrhea,
   syphilis,
   hiv,

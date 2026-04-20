@@ -1,0 +1,724 @@
+{
+    "handle": "assessmentsChlamydia",
+    "settings": "{\"displayFormTitle\":false,\"displayCurrentPageTitle\":false,\"displayPageTabs\":false,\"displayPageProgress\":false,\"scrollToTop\":false,\"progressPosition\":\"end\",\"progressValuePosition\":\"inside-center\",\"defaultLabelPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"defaultInstructionsPosition\":\"verbb\\\\formie\\\\positions\\\\AboveInput\",\"requiredIndicator\":\"asterisk\",\"submitMethod\":\"ajax\",\"submitAction\":\"message\",\"submitActionTab\":null,\"submitActionUrl\":null,\"submitActionFormHide\":false,\"submitActionMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Submission saved.\\\"}]}]\",\"submitActionMessageTimeout\":null,\"submitActionMessagePosition\":\"top-form\",\"loadingIndicator\":null,\"loadingIndicatorText\":null,\"validationOnSubmit\":true,\"validationOnFocus\":false,\"errorMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"},\\\"content\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"Couldn\\u2019t save submission due to errors.\\\"}]}]\",\"errorMessagePosition\":\"top-form\",\"requireUser\":false,\"requireUserMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleForm\":false,\"scheduleFormStart\":null,\"scheduleFormEnd\":null,\"scheduleFormPendingMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"scheduleFormExpiredMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissions\":null,\"limitSubmissionsNumber\":null,\"limitSubmissionsType\":\"total\",\"limitSubmissionsMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"limitSubmissionsIpAddressNumber\":null,\"limitSubmissionsIpAddressType\":\"total\",\"limitSubmissionsIpAddressMessage\":\"[{\\\"type\\\":\\\"paragraph\\\",\\\"attrs\\\":{\\\"textAlign\\\":\\\"start\\\"}}]\",\"integrations\":[],\"submissionTitleFormat\":\"{timestamp}\",\"collectIp\":false,\"collectUser\":false,\"dataRetention\":null,\"dataRetentionValue\":null,\"fileUploadsAction\":null,\"redirectUrl\":null,\"pageRedirectUrl\":null,\"defaultEmailTemplateId\":null,\"disableCaptchas\":false}",
+    "submitActionEntryId": null,
+    "submitActionEntrySiteId": null,
+    "defaultStatusId": 1,
+    "dataRetention": "forever",
+    "dataRetentionValue": null,
+    "userDeletedAction": "retain",
+    "fileUploadsAction": "retain",
+    "title": "Assessments - Chlamydia",
+    "notifications": [],
+    "pages": [
+        {
+            "label": "Page 1",
+            "settings": {
+                "submitButtonLabel": "Submit",
+                "backButtonLabel": "Back",
+                "showBackButton": false,
+                "saveButtonLabel": "Save",
+                "showSaveButton": false,
+                "saveButtonStyle": "link",
+                "buttonsPosition": "left",
+                "cssClasses": null,
+                "containerAttributes": null,
+                "inputAttributes": null,
+                "enableNextButtonConditions": false,
+                "nextButtonConditions": [],
+                "enablePageConditions": false,
+                "pageConditions": [],
+                "enableJsEvents": false,
+                "jsGtmEventOptions": []
+            },
+            "rows": [
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "What is your sex or gender?",
+                                "handle": "chlamydia_1",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Woman",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Man who has sex with men (MSM)",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Man who has sex with women only",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Prefer not to say",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "What is your age range?",
+                                "handle": "chlamydia_2",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Under 25",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "25–29",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "30–39",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "40 or older",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you been diagnosed with chlamydia or gonorrhea before?",
+                                "handle": "chlamydia_3",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, within the past 12 months",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, more than a year ago",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Are you currently pregnant or planning a pregnancy?",
+                                "handle": "chlamydia_4",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": true,
+                                "conditions": {
+                                    "showRule": "show",
+                                    "conditionRule": "any",
+                                    "conditions": [
+                                        {
+                                            "id": "new2180-1487",
+                                            "field": "{field:chlamydia_1}",
+                                            "condition": "=",
+                                            "value": "a_2"
+                                        },
+                                        {
+                                            "id": "new7897-8720",
+                                            "field": "{field:chlamydia_1}",
+                                            "condition": "=",
+                                            "value": "d_1"
+                                        }
+                                    ]
+                                },
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, currently pregnant",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, planning a pregnancy",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Not applicable",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you had unprotected sex with a new partner since your last chlamydia test? (Most chlamydia carriers have no symptoms and don't know they're infected.)",
+                                "handle": "chlamydia_5",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, and I have not been tested since",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, but I was tested afterward",
+                                        "value": "b_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No new partners since my last test",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I have never been tested for chlamydia",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "How many sexual partners have you had in the past 6 months?",
+                                "handle": "chlamydia_6",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "4 or more",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "2–3",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "1",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "What types of sexual contact have you had recently without a condom? Select all that apply.",
+                                "handle": "chlamydia_7",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Vaginal intercourse",
+                                        "value": "a_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Anal intercourse",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Oral sex (giving or receiving)",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "All contact was protected or I have not been sexually active",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Has a sexual partner been diagnosed with chlamydia or another STI, or have you been notified of an exposure?",
+                                "handle": "chlamydia_8",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, a partner was diagnosed with chlamydia",
+                                        "value": "a_5",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, a partner was diagnosed with a different STI",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "Have you noticed any unusual genital discharge?",
+                                "handle": "chlamydia_9",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Yes, clear, watery, or milky discharge",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Yes, discharge of a different color or consistency",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "No",
+                                        "value": "c_0",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Unsure",
+                                        "value": "d_1",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you experienced any of the following urogenital symptoms? Select all that apply.",
+                                "handle": "chlamydia_10",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Pain or burning during urination",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Pain during sexual intercourse",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Lower abdominal or pelvic pain",
+                                        "value": "c_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Bleeding between periods or after sex (if applicable)",
+                                        "value": "d_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "e_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Checkboxes",
+                            "settings": {
+                                "label": "Have you noticed symptoms in any of these other areas? Select all that apply.",
+                                "handle": "chlamydia_11",
+                                "instructions": null,
+                                "required": true,
+                                "multi": true,
+                                "layout": "vertical",
+                                "toggleCheckbox": null,
+                                "toggleCheckboxLabel": null,
+                                "limitOptions": false,
+                                "min": null,
+                                "max": null,
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Testicular pain or swelling",
+                                        "value": "a_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Rectal pain, discharge, or bleeding",
+                                        "value": "b_3",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "Eye redness, pain, or discharge",
+                                        "value": "c_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "None of these",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "fields": [
+                        {
+                            "type": "verbb\\formie\\fields\\Radio",
+                            "settings": {
+                                "label": "When did your symptoms begin relative to a possible exposure? (Chlamydia symptoms typically appear 7–21 days after contact, if they appear at all.)",
+                                "handle": "chlamydia_12",
+                                "instructions": null,
+                                "required": true,
+                                "layout": "vertical",
+                                "enabled": true,
+                                "matchField": null,
+                                "placeholder": null,
+                                "defaultValue": null,
+                                "prePopulate": null,
+                                "errorMessage": null,
+                                "labelPosition": null,
+                                "instructionsPosition": null,
+                                "cssClasses": null,
+                                "containerAttributes": [],
+                                "inputAttributes": [],
+                                "includeInEmail": false,
+                                "emailValue": "label",
+                                "enableConditions": false,
+                                "conditions": null,
+                                "enableContentEncryption": false,
+                                "visibility": null,
+                                "options": [
+                                    {
+                                        "label": "Within 1–3 weeks of a new sexual contact",
+                                        "value": "a_4",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "More than 3 weeks after contact",
+                                        "value": "b_2",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I'm not sure of the timing",
+                                        "value": "c_1",
+                                        "isDefault": false
+                                    },
+                                    {
+                                        "label": "I have not had any symptoms",
+                                        "value": "d_0",
+                                        "isDefault": false
+                                    }
+                                ],
+                                "multi": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "exportVersion": "v3"
+}
