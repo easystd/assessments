@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react";
 import type { AssessmentConfig } from "@/lib/assessments/types";
 import { calculateScore } from "@/lib/scoring";
-import { Button } from "@/components/ui/button";
+import { Button } from "@easystd/ui-shared";
 import { ProgressHeader } from "./progress-header";
 import { QuestionStep } from "./question-step";
 import { ResultsPanel } from "./results-panel";
