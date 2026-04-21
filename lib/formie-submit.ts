@@ -4,6 +4,7 @@ import type { SymptomCheckerQuestion } from "@/lib/symptom-checker";
 const LETTERS = "abcdefghijklmnopqrstuvwxyz";
 
 const ENDPOINT = "https://easystd.com/api";
+const TOKEN = "pIt47a8U0Hfw5bvivBgwxdAjDReGSZvB";
 
 const FORM: Record<string, { handle: string; prefix: string }> = {
   BV:               { handle: "assessmentsBV",           prefix: "bv" },
@@ -88,15 +89,13 @@ async function gqlPost(
     .map(([k, v]) => `${k}: ${JSON.stringify(v)}`)
     .join(", ");
 
-  const headers: Record<string, string> = {
-    "Content-Type": "application/json",
-    Authorization: `Bearer ${process.env.NEXT_PUBLIC_CRAFT_GQL_TOKEN}`,
-  };
-
   try {
     await fetch(ENDPOINT, {
       method: "POST",
-      headers,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${TOKEN}`,
+      },
       body: JSON.stringify({
         query: `mutation { save_${handle}_Submission(${args}) { id } }`,
       }),
