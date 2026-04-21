@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import type { SymptomCheckerConfig } from "@/lib/symptom-checker";
 import { calculateSymptomCheckerResults } from "@/lib/symptom-checker";
+import { submitSymptomChecker } from "@/lib/formie-submit";
 import { Button } from "@easystd/ui-shared";
 import { ProgressHeader } from "@/components/assessment/progress-header";
 import { QuestionStep } from "./question-step";
@@ -36,6 +37,7 @@ export function SymptomCheckerWizard({ config }: SymptomCheckerWizardProps) {
 
   const handleNext = () => {
     if (isLastStep) {
+      submitSymptomChecker(questions, answers).catch(() => {});
       setSubmitted(true);
     } else {
       setStep((s) => s + 1);

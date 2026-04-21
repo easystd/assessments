@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react";
 import type { AssessmentConfig } from "@/lib/assessments/types";
 import { calculateScore } from "@/lib/scoring";
+import { submitAssessment } from "@/lib/formie-submit";
 import { Button } from "@easystd/ui-shared";
 import { ProgressHeader } from "./progress-header";
 import { QuestionStep } from "./question-step";
@@ -36,6 +37,7 @@ export function AssessmentWizard({ config }: AssessmentWizardProps) {
 
   const handleNext = () => {
     if (isLastStep) {
+      submitAssessment(config, answers).catch(() => {});
       setSubmitted(true);
     } else {
       setStep((s) => s + 1);
